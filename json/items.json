@@ -1,0 +1,828 @@
+{
+    "components": [
+        {
+            "apiName": "TFT_Item_ChainVest",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleArmor% +@Armor@ Armor",
+            "effects": {
+                "Armor": 20
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Chain_Vest.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Chain Vest",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_RecurveBow",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleAS% +@AS@% Attack Speed",
+            "effects": {
+                "AS": 10
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Recurve_Bow.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Recurve Bow",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_TearOfTheGoddess",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleMana% +@Mana@ Mana",
+            "effects": {
+                "Mana": 15
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tear_of_the_Goddess.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Tear of the Goddess",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_NegatronCloak",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleMR% +@MagicResist@ Magic Resist",
+            "effects": {
+                "MagicResist": 20
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Negatron_Cloak.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Negatron Cloak",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_SparringGloves",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "+@CritChance@ Critical Strike Chance",
+            "effects": {
+                "CritChance": 20
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Sparring_Gloves.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Sparring Gloves",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Spatula",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "<tftitemrules>It must do something...</tftitemrules>",
+            "effects": {
+                "{fe9818ef}": 5
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spatula.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Spatula",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_BFSword",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleAD% +@AD*100@% Attack Damage",
+            "effects": {
+                "AD": 0.10000000149011612
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/BF_Sword.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "B.F. Sword",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_GiantsBelt",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleHealth% +@Health@ Health",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gaints_Belt.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Giant's Belt",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_NeedlesslyLargeRod",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "%i:scaleAP% +@AP@ Ability Power",
+            "effects": {
+                "AP": 10
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Needlessly_Large_Rod.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Needlessly Large Rod",
+            "unique": false
+        }
+    ],
+    "items": [
+        {
+            "apiName": "TFT9_Item_WorldEnder_DarkinBlade",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "If the holder of this item gets a takedown, they will be consumed and Aatrox will be reborn!",
+            "effects": {
+                "AD": 1,
+                "AP": 100,
+                "Health": 1000
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_MiscItems/TFT9_WorldEnder_DarkinBlade.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "The Darkin Blade",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_ForsakenEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Forsaken trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Forgotten.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Forsaken"
+            ],
+            "name": "Forsaken Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_FreljordEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Freljord trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Freljord.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Freljord"
+            ],
+            "name": "Freljord Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_IxtalEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Ixtal trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Ixtal.TFT_Set9_Stage2.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Ixtal"
+            ],
+            "name": "Ixtal Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_RogueEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Rogue trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Rogue.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Rogue"
+            ],
+            "name": "Rogue Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_TargonEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Targon trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Targon.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Targon"
+            ],
+            "name": "Targon Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_QuickdrawEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Quickdraw trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Ranger.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Quickdraw"
+            ],
+            "name": "Quickdraw Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_ShurimaEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_NeedlesslyLargeRod"
+            ],
+            "desc": "The holder gains the Shurima trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AP": 10
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Shurima.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Shurima"
+            ],
+            "name": "Shurima Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_SorcererEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "The holder gains the Sorcerer trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Mana": 15
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Sorcerer.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Sorcerer"
+            ],
+            "name": "Sorcerer Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_ShadowIslesEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Shadow Isles trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/ShadowIsles.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_ShadowIsles"
+            ],
+            "name": "Shadow Isles Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_ChallengerEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_RecurveBow"
+            ],
+            "desc": "The holder gains the Challenger trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "AS": 10
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Challenger.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Challenger"
+            ],
+            "name": "Challenger Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_BilgewaterEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NegatronCloak",
+                "TFT_Item_Spatula"
+            ],
+            "desc": "The holder gains the Bilgewater trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "MagicResist": 20
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bilgewater.TFT_Set9_Stage2.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9b_Bilgewater"
+            ],
+            "name": "Bilgewater Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_VanquisherEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_SparringGloves",
+                "TFT_Item_Spatula"
+            ],
+            "desc": "The holder gains the Vanquisher trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "CritChance": 15
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Vanquisher.TFT_Set9_Stage2.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9b_Vanquisher"
+            ],
+            "name": "Vanquisher Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_SeekerEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Protector trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Vanquisher.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_DefTrait"
+            ],
+            "name": "Protector Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_IoniaEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_BFSword"
+            ],
+            "desc": "The holder gains the Ionia trait.<br><br>Ionia Bonus: @BonusAttackSpeed@% Attack Speed.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AD": 0.10000000149011612,
+                "BonusAttackSpeed": 33
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Ionia.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Ionia"
+            ],
+            "name": "Ionia Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_BrawlerEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Bruiser trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bruiser.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Bruiser"
+            ],
+            "name": "Bruiser Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_DeadeyeEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Deadeye trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Deadeye.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Deadeye"
+            ],
+            "name": "Deadeye Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_ArmorcladEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_ChainVest"
+            ],
+            "desc": "The holder gains the Juggernaut trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Armor": 20
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Juggernaut.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Armorclad"
+            ],
+            "name": "Juggernaut Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_TrickshotEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Gunner trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Gunner.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Marksman"
+            ],
+            "name": "Gunner Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_PreserverEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Invoker trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Preserver.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Preserver"
+            ],
+            "name": "Invoker Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_StrategistEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Strategist trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Strategist.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Strategist"
+            ],
+            "name": "Strategist Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_VoidEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Void trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Void.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Void"
+            ],
+            "name": "Void Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_ZaunEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Zaun trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Zaun.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Zaun"
+            ],
+            "name": "Zaun Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_BastionEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Bastion trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bastion.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Bastion"
+            ],
+            "name": "Bastion Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_PiltoverEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Piltover trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Piltover.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Piltover"
+            ],
+            "name": "Piltover Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_SlayerEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Slayer trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Slayer.TFT_Set9_Stage2.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Slayer"
+            ],
+            "name": "Slayer Emblem<br>",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_NoxusEmblem",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "The holder gains the Noxus Trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Noxus.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Noxus"
+            ],
+            "name": "Noxus Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_DemaciaEmblem",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "The holder gains the Demacia trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "effects": {
+                "Health": 150
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Demacia.TFT_Set9_Stage2.tex",
+            "id": null,
+            "incompatibleTraits": [
+                "Set9_Demacia"
+            ],
+            "name": "Demacia Emblem",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_OrnnHullbreaker",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Combat start: If there are no adjacent allies, gain @ExtraHealth@ Health.",
+            "effects": {
+                "AS": 30,
+                "Armor": 35,
+                "ExtraHealth": 600,
+                "MagicResist": 35
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_Hullbreaker.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Hullcrusher",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_OrnnDuskbladeOfDraktharr",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Combat start: Leap to the enemy backline. Your first attack deals <scaleAD>@ProcADPercent*100@%</scaleAD> of your %i:scaleAD% Attack Damage as bonus physical damage. This bonus refreshes on kill.",
+            "effects": {
+                "AD": 0.20000000298023224,
+                "CritChance": 20,
+                "ProcADPercent": 1.5
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_ProwlersClaw.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Nightstalker's Talon",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_OrnnTrickstersGlass",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Summon a clone with @HealthPercent@% max Health and +@ManaIncrease*100@% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
+            "effects": {
+                "AS": 10,
+                "Armor": 10,
+                "CritChance": 15,
+                "HealthPercent": 70,
+                "MagicResist": 10,
+                "ManaIncrease": 0.30000001192092896
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_TrickstersGlass.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Trickster's Glass",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_BaronsHead",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "<tftitemrules>The terror from the Void was no match for the ingenuity, firepower, and weapons of dubious legality from Piltover.</tftitemrules>",
+            "effects": {},
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_MiscItems/Baron_Square.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Baron Nashor's Head",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_PiltoverCharges",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Start with @TooltipStartingCharge@ Charge. Gain Charges each time you lose. The larger your loss streak, the more Charges you gain per loss. When you win, all Charges are converted to Power for the T-Hex.<br><br>Current loss streak: <TFTBonus>@TFTUnitProperty.item:TFT9_Piltover_Charges@</TFTBonus> <rules>(doubled in Hyper Roll)</rules><br>Charges granted next loss: <TFTBonus>+@TFTUnitProperty.item:TFT9_Piltover_ChargesToGrant@</TFTBonus><br>Current loot value on victory: <TFTBonus>@TFTUnitProperty.item:TFT9_Piltover_ProgressGoldValue@ gold</TFTBonus><br><br><tftitemrules>[This does not count as an item.]</tftitemrules>",
+            "effects": {
+                "TooltipStartingCharge": "null"
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Set9_Inventor/TFT9_PiltoverCharges.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Charges",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_CrownOfDemacia_DU",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "If the holder begins combat in the front 2 rows, regenerate @HealingPercentPerTickPerStage@-@HealingPercentPerTickPerStage*7@% maximum Health every @HealTickRate@ seconds (based on stage). If they start in the back 2 rows, gain @ADandAPPerTick@-@ADandAPPerTick*7@% %i:scaleAD% Attack Damage and %i:scaleAP% Ability Power every @HealTickRate@ seconds instead. <br><br>If the holder of this item dies, you instantly lose the fight.<br><br><tftitemrules>You can remove this item by benching the holder.</tftitemrules><br><br><tftitemrules>Double Up: This item no longer causes you to lose the fight that round if it's holder is part of a reinforcement.</tftitemrules><br>",
+            "effects": {
+                "ADandAPPerTick": 1,
+                "AS": 40,
+                "HealTickRate": 2,
+                "HealingPercentPerTickPerStage": 2,
+                "Health": 400
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_RegionItems/CrownOfDemacia.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Crown of Demacia",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_OrnnHorizonFocus",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Gain %i:scaleRange% @HexRangeIncrease@ Attack Range. Damage is increasedy by @PercentDamageIncrease@% for each hex between the holder and their target.",
+            "effects": {
+                "AD": 0.15000000596046448,
+                "AP": 15,
+                "AS": 15,
+                "HexRangeIncrease": 1,
+                "PercentDamageIncrease": 10
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_SnipersFocus.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Sniper's Focus",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_CrownOfDemacia",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "If the holder begins combat in the front 2 rows, regenerate @HealingPercentPerTickPerStage@-@HealingPercentPerTickPerStage*7@% maximum Health every @HealTickRate@ seconds (based on stage). If they start in the back 2 rows, gain @ADandAPPerTick@-@ADandAPPerTick*7@% %i:scaleAD% Attack Damage and %i:scaleAP% Ability Power every @HealTickRate@ seconds instead. <br><br>If the holder of this item dies, you instantly lose the fight.<br><br><tftitemrules>You can remove this item by benching the holder.</tftitemrules><br><br>",
+            "effects": {
+                "ADandAPPerTick": 1,
+                "AS": 40,
+                "HealTickRate": 2,
+                "HealingPercentPerTickPerStage": 2,
+                "Health": 400
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_RegionItems/CrownOfDemacia.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Crown of Demacia",
+            "unique": true
+        },
+        {
+            "apiName": "TFT9_Item_OrnnPrototypeForge",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Each round: Equip 2 random Ornn Artifacts.<br><br><tftitemrules>[Consumes 3 item slots.]</tftitemrules>",
+            "effects": {},
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_BlacksmithsGloves.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Blacksmith's Gloves",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_PiltoverProgress",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Gain Power by winning combats after gaining Charges. More Power gives more stats.<br><br><tftitemrules>[This does not count as an item.]</tftitemrules>",
+            "effects": {},
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Set9_Inventor/TFT9_PiltoverPower.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Power",
+            "unique": false
+        },
+        {
+            "apiName": "TFT9_Item_OrnnDeathfireGrasp",
+            "associatedTraits": [],
+            "composition": [],
+            "desc": "Combat start: Blast the current target for @PercentMaxHealthDamage*100@% of their max Health as magic damage.<br><br>For the next @Duration@ seconds, deal @BaseAmp*100@% more damage. Damage dealt to the blasted target is increased to @BonusAmp*100@%.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AP": 50,
+                "BaseAmp": 0.25,
+                "BonusAmp": 0.3499999940395355,
+                "Duration": 10,
+                "Mana": 30,
+                "PercentMaxHealthDamage": 0.20000000298023224
+            },
+            "from": null,
+            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_DeathfireGrasp.TFT_Set9.tex",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Deathfire Grasp",
+            "unique": true
+        }
+    ]
+}
