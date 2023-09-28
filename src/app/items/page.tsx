@@ -1,3 +1,8 @@
-export default function Items(): JSX.Element {
-  return <div>Items page</div>;
+import Item from "@/components/item";
+import getJsonData from "@/utils/getJsonData";
+
+export default async function Items(): Promise<JSX.Element> {
+  const { components, items } = await getJsonData("items.json");
+
+  return <Item components={components} items={items} />;
 }

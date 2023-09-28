@@ -9,7 +9,7 @@
                 "Armor": 20
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Chain_Vest.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/chain_vest.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Chain Vest",
@@ -24,7 +24,7 @@
                 "AS": 10
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Recurve_Bow.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/recurve_bow.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Recurve Bow",
@@ -39,7 +39,7 @@
                 "Mana": 15
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tear_of_the_Goddess.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/tear_of_the_goddess.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Tear of the Goddess",
@@ -54,7 +54,7 @@
                 "MagicResist": 20
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Negatron_Cloak.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/negatron_cloak.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Negatron Cloak",
@@ -69,7 +69,7 @@
                 "CritChance": 20
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Sparring_Gloves.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/sparring_gloves.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Sparring Gloves",
@@ -84,7 +84,7 @@
                 "{fe9818ef}": 5
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spatula.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/spatula.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Spatula",
@@ -99,7 +99,7 @@
                 "AD": 0.10000000149011612
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/BF_Sword.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/bf_sword.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "B.F. Sword",
@@ -114,7 +114,7 @@
                 "Health": 150
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gaints_Belt.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/gaints_belt.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Giant's Belt",
@@ -129,7 +129,7 @@
                 "AP": 10
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Needlessly_Large_Rod.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/needlessly_large_rod.png",
             "id": null,
             "incompatibleTraits": [],
             "name": "Needlessly Large Rod",
@@ -137,125 +137,6 @@
         }
     ],
     "items": [
-        {
-            "apiName": "TFT9_Item_WorldEnder_DarkinBlade",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "If the holder of this item gets a takedown, they will be consumed and Aatrox will be reborn!",
-            "effects": {
-                "AD": 1,
-                "AP": 100,
-                "Health": 1000
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_MiscItems/TFT9_WorldEnder_DarkinBlade.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [],
-            "name": "The Darkin Blade",
-            "unique": false
-        },
-        {
-            "apiName": "TFT9_Item_ForsakenEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Forsaken trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Forgotten.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Forsaken"
-            ],
-            "name": "Forsaken Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_FreljordEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Freljord trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Freljord.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Freljord"
-            ],
-            "name": "Freljord Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_IxtalEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Ixtal trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Ixtal.TFT_Set9_Stage2.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Ixtal"
-            ],
-            "name": "Ixtal Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_RogueEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Rogue trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Rogue.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Rogue"
-            ],
-            "name": "Rogue Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_TargonEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Targon trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Targon.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Targon"
-            ],
-            "name": "Targon Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_QuickdrawEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Quickdraw trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Ranger.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Quickdraw"
-            ],
-            "name": "Quickdraw Emblem",
-            "unique": true
-        },
         {
             "apiName": "TFT9_Item_ShurimaEmblem",
             "associatedTraits": [],
@@ -268,7 +149,7 @@
                 "AP": 10
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Shurima.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/shurima.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Shurima"
@@ -288,29 +169,12 @@
                 "Mana": 15
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Sorcerer.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/sorcerer.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Sorcerer"
             ],
             "name": "Sorcerer Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_ShadowIslesEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Shadow Isles trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/ShadowIsles.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_ShadowIsles"
-            ],
-            "name": "Shadow Isles Emblem",
             "unique": true
         },
         {
@@ -325,7 +189,7 @@
                 "AS": 10
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Challenger.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/challenger.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Challenger"
@@ -345,7 +209,7 @@
                 "MagicResist": 20
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bilgewater.TFT_Set9_Stage2.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/bilgewater.tft_set9_stage2.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9b_Bilgewater"
@@ -365,29 +229,12 @@
                 "CritChance": 15
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Vanquisher.TFT_Set9_Stage2.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/vanquisher.tft_set9_stage2.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9b_Vanquisher"
             ],
             "name": "Vanquisher Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_SeekerEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Protector trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Vanquisher.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_DefTrait"
-            ],
-            "name": "Protector Emblem",
             "unique": true
         },
         {
@@ -403,46 +250,12 @@
                 "BonusAttackSpeed": 33
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Ionia.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/ionia.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Ionia"
             ],
             "name": "Ionia Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_BrawlerEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Bruiser trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bruiser.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Bruiser"
-            ],
-            "name": "Bruiser Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_DeadeyeEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Deadeye trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Deadeye.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Deadeye"
-            ],
-            "name": "Deadeye Emblem",
             "unique": true
         },
         {
@@ -457,148 +270,12 @@
                 "Armor": 20
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Juggernaut.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/juggernaut.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Armorclad"
             ],
             "name": "Juggernaut Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_TrickshotEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Gunner trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Gunner.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Marksman"
-            ],
-            "name": "Gunner Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_PreserverEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Invoker trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Preserver.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Preserver"
-            ],
-            "name": "Invoker Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_StrategistEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Strategist trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Strategist.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Strategist"
-            ],
-            "name": "Strategist Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_VoidEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Void trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Void.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Void"
-            ],
-            "name": "Void Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_ZaunEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Zaun trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Zaun.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Zaun"
-            ],
-            "name": "Zaun Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_BastionEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Bastion trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Bastion.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Bastion"
-            ],
-            "name": "Bastion Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_PiltoverEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Piltover trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Piltover.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Piltover"
-            ],
-            "name": "Piltover Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_SlayerEmblem",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Slayer trait.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-            "effects": {
-                "Health": 150
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Slayer.TFT_Set9_Stage2.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Slayer"
-            ],
-            "name": "Slayer Emblem<br>",
             "unique": true
         },
         {
@@ -613,7 +290,7 @@
                 "Health": 150
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Noxus.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/traits/spatula/set9/noxus.tft_set9.png",
             "id": null,
             "incompatibleTraits": [
                 "Set9_Noxus"
@@ -622,207 +299,815 @@
             "unique": true
         },
         {
-            "apiName": "TFT9_Item_DemaciaEmblem",
+            "apiName": "TFT_Item_RabadonsDeathcap",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "The holder gains the Demacia trait.<br><br><tftitemrules>[Unique - only 1 per champion.]</tftitemrules>",
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_NeedlesslyLargeRod"
+            ],
+            "desc": "<tftitemrules>This humble hat can help you make, or unmake, the world itself.</tftitemrules>",
             "effects": {
+                "AP": 70
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/rabadons_deathcap.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Rabadon's Deathcap",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_InfinityEdge",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Abilities can critically strike.",
+            "effects": {
+                "AD": 0.3499999940395355,
+                "CritChance": 35
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/infinity_edge.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Infinity Edge",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_FrozenHeart",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_TearOfTheGoddess",
+                "TFT_Item_ChainVest"
+            ],
+            "desc": "Once per combat at @HealthThreshold@% Health, gain a @ShieldHealthPercent@% max Health Shield that lasts @ShieldDuration@ seconds and gain @Stats@ Armor and @Stats@ Magic Resist.",
+            "effects": {
+                "Armor": 20,
+                "HealthThreshold": 40,
+                "Mana": 45,
+                "ShieldDuration": 5,
+                "ShieldHealthPercent": 25,
+                "Stats": 20
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/winters_approach.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Protector's Vow",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Redemption",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_TearOfTheGoddess",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "Heal allies within 1 hex for @MissingHealthHeal@% of their missing Health every @HealTickRate@ seconds. They also take @AoEDamageReduction@% less damage for @HealTickRate@ seconds (damage reduction does not stack).<br><br><TFTTrackerLabel>Healing:</TFTTrackerLabel> <TFTHighlight>@TFTUnitProperty.item:TFT_Tracker_Value1@</TFTHighlight>",
+            "effects": {
+                "AoEDamageReduction": 10,
+                "HealTickRate": 5,
+                "Health": 150,
+                "HexRadius": 1,
+                "Mana": 15,
+                "MaxHeal": 1000,
+                "MissingHealthHeal": 15
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/redemption.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Redemption",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_ThiefsGloves",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_SparringGloves",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Each round: Equip 2 random items.<br><br><tftitemrules>[Consumes 3 item slots.]</tftitemrules>",
+            "effects": {
+                "CritChance": 40
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/thieves_gloves.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Thief's Gloves",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_GuinsoosRageblade",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_RecurveBow",
+                "TFT_Item_NeedlesslyLargeRod"
+            ],
+            "desc": "Attacks grant @AttackSpeedPerStack@% stacking Attack Speed.",
+            "effects": {
+                "AP": 10,
+                "AS": 18,
+                "AttackSpeedPerStack": 4
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/guinsoos_rageblade.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Guinsoo's Rageblade",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_IonicSpark",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_NegatronCloak"
+            ],
+            "desc": "@MRShred@% <TFTKeyword>Shred</TFTKeyword> enemies within @HexRange@ hexes. When enemies cast an Ability, deal magic damage equal to @ManaRatio@% of their maximum Mana.<br><br><tftitemrules><tftbold>Shred</tftbold>: Reduce Magic Resist</tftitemrules>",
+            "effects": {
+                "AP": 15,
+                "Damage": 250,
+                "HexRange": 2,
+                "MRShred": 30,
+                "MagicResist": 25,
+                "ManaRatio": 160
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/ionic_spark.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Ionic Spark",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_SteraksGage",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "Once per combat at @HealthThreshold@% Health, gain @BonusMaxHealthPerc@% max Health and @BonusADToGive@% Attack Damage.",
+            "effects": {
+                "AD": 0.15000000596046448,
+                "BonusADToGive": 35,
+                "BonusMaxHealthPerc": 20,
+                "Health": 200,
+                "HealthThreshold": 60
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/steraks_gage.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Sterak's Gage",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_DragonsClaw",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NegatronCloak",
+                "TFT_Item_NegatronCloak"
+            ],
+            "desc": "Every @HealthRegenInterval@ seconds, heal @PercentHealthDamage@% max Health.",
+            "effects": {
+                "HealthRegenInterval": 2,
+                "ICD": 0.5,
+                "MagicResist": 65,
+                "PercentHealthDamage": 5
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/dragons_claw.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Dragon's Claw",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_PowerGauntlet",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_GiantsBelt",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "After damaging a Shield, deal @DamageAmpPct@% more damage for @Duration@ seconds.",
+            "effects": {
+                "AP": 10,
+                "AS": 25,
+                "CritChance": 20,
+                "DamageAmpPct": 25,
+                "Duration": 3,
                 "Health": 150
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set9/Demacia.TFT_Set9_Stage2.tex",
-            "id": null,
-            "incompatibleTraits": [
-                "Set9_Demacia"
-            ],
-            "name": "Demacia Emblem",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_OrnnHullbreaker",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "Combat start: If there are no adjacent allies, gain @ExtraHealth@ Health.",
-            "effects": {
-                "AS": 30,
-                "Armor": 35,
-                "ExtraHealth": 600,
-                "MagicResist": 35
-            },
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_Hullbreaker.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/stridebreaker.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Hullcrusher",
+            "name": "Guardbreaker",
             "unique": false
         },
         {
-            "apiName": "TFT9_Item_OrnnDuskbladeOfDraktharr",
+            "apiName": "TFT_Item_GargoyleStoneplate",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "Combat start: Leap to the enemy backline. Your first attack deals <scaleAD>@ProcADPercent*100@%</scaleAD> of your %i:scaleAD% Attack Damage as bonus physical damage. This bonus refreshes on kill.",
+            "composition": [
+                "TFT_Item_ChainVest",
+                "TFT_Item_NegatronCloak"
+            ],
+            "desc": "Gain @ArmorPerEnemy@ Armor and @MRPerEnemy@ Magic Resist for each enemy targeting the holder.",
             "effects": {
-                "AD": 0.20000000298023224,
-                "CritChance": 20,
-                "ProcADPercent": 1.5
+                "Armor": 25,
+                "ArmorPerEnemy": 15,
+                "MRPerEnemy": 15,
+                "MagicResist": 25
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_ProwlersClaw.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/gargoyle_stoneplate.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Nightstalker's Talon",
+            "name": "Gargoyle Stoneplate",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_BrambleVest",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_ChainVest",
+                "TFT_Item_ChainVest"
+            ],
+            "desc": "Negates @CritReduction*100@% bonus damage from incoming critical strikes. When struck by any attack, deal <magicDamage>@1StarAoEDamage@/@2StarAoEDamage@/@3StarAoEDamage@ %i:star% magic damage</magicDamage> to all adjacent enemies.<br><br><tftitemrules>Cooldown: @ICD@ seconds</tftitemrules>",
+            "effects": {
+                "1StarAoEDamage": 75,
+                "2StarAoEDamage": 100,
+                "3StarAoEDamage": 150,
+                "Armor": 75,
+                "CritReduction": 0.5,
+                "ICD": 2,
+                "{6688a0d5}": 100,
+                "{b5c2a66b}": 200
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/bramble_vest.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Bramble Vest",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_MadredsBloodrazor",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_RecurveBow"
+            ],
+            "desc": "Deal @LargeBonusPct@% more damage to enemies with more than @HealthThreshold@ maximum Health.",
+            "effects": {
+                "AD": 0.30000001192092896,
+                "AP": 20,
+                "AS": 10,
+                "HealthThreshold": 1600,
+                "LargeBonusPct": 25
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/giant_slayer.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Giant Slayer",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_RedBuff",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_ChainVest",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "Every @ICD@ seconds, deal @BurnPercent@% <TFTKeyword>Burn</TFTKeyword> and @GrievousWoundsPercent@% <TFTKeyword>Wound</TFTKeyword> to an enemy within @HexRange@ hexes for @BurnDuration@ seconds.<br><br><tftitemrules>[Unique - only 1 per champion]<br><tftbold>Burn</tftbold>: Deals a percent of the target's maximum Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules>",
+            "effects": {
+                "Armor": 20,
+                "BurnDuration": 10,
+                "BurnPercent": 1,
+                "GrievousWoundsPercent": 33,
+                "Health": 250,
+                "HexRange": 2,
+                "ICD": 2,
+                "MonsterCap": 100
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/sunfire_cape.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Sunfire Cape",
             "unique": true
         },
         {
-            "apiName": "TFT9_Item_OrnnTrickstersGlass",
+            "apiName": "TFT_Item_UnstableConcoction",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "Summon a clone with @HealthPercent@% max Health and +@ManaIncrease*100@% max Mana. You cannot equip items to the clone.<br><br><tftitemrules>The clone benefits from active traits</tftitemrules><br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br>",
+            "composition": [
+                "TFT_Item_TearOfTheGoddess",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Gain 2 effects:<li>@BaseAD*100@% Attack Damage and @BaseSP@ Ability Power.<li>@BaseHeal@% <TFTKeyword>Omnivamp</TFTKeyword>.<br><br>Each round, randomly double 1 of these effects.<br><br><tftitemrules><tftbold>Omnivamp</tftbold>: heal for some of damage dealt</tftitemrules>",
+            "effects": {
+                "BaseAD": 0.15000000596046448,
+                "BaseHeal": 15,
+                "BaseSP": 15,
+                "BonusSP": 15,
+                "CritChance": 20,
+                "Mana": 15,
+                "{693a77ae}": 0.15000000596046448,
+                "{a60806db}": 66.66699981689453
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/hand_of_justice.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Hand Of Justice",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_GuardianAngel",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_ChainVest"
+            ],
+            "desc": "Once per combat: At @HealthThreshold@% Health, briefly become untargetable and shed negative effects. Then, gain @AttackSpeed@% bonus Attack Speed.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AD": 0.10000000149011612,
+                "Armor": 20,
+                "AttackSpeed": 15,
+                "DamageReduction": 100,
+                "HealthThreshold": 60,
+                "StealthDuration": 1
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/edge_of_night.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Edge of Night",
+            "unique": true
+        },
+        {
+            "apiName": "TFT_Item_TitansResolve",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_ChainVest",
+                "TFT_Item_RecurveBow"
+            ],
+            "desc": "Gain @StackingAD*100@% Attack Damage and @StackingAD*100@ Ability Power when attacking or taking damage, stacking up to @StackCap@ times.  <br><br>At full stacks, gain @BonusResistsAtStackCap@ Armor and @BonusResistsAtStackCap@ Magic Resist.",
             "effects": {
                 "AS": 10,
-                "Armor": 10,
-                "CritChance": 15,
-                "HealthPercent": 70,
-                "MagicResist": 10,
-                "ManaIncrease": 0.30000001192092896
+                "Armor": 20,
+                "BonusResistsAtStackCap": 20,
+                "StackCap": 25,
+                "StackingAD": 0.019999999552965164,
+                "StackingSP": 2
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_TrickstersGlass.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/titans_resolve.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Trickster's Glass",
-            "unique": true
-        },
-        {
-            "apiName": "TFT9_Item_BaronsHead",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "<tftitemrules>The terror from the Void was no match for the ingenuity, firepower, and weapons of dubious legality from Piltover.</tftitemrules>",
-            "effects": {},
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_MiscItems/Baron_Square.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [],
-            "name": "Baron Nashor's Head",
+            "name": "Titan's Resolve",
             "unique": false
         },
         {
-            "apiName": "TFT9_Item_PiltoverCharges",
+            "apiName": "TFT_Item_RunaansHurricane",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "Start with @TooltipStartingCharge@ Charge. Gain Charges each time you lose. The larger your loss streak, the more Charges you gain per loss. When you win, all Charges are converted to Power for the T-Hex.<br><br>Current loss streak: <TFTBonus>@TFTUnitProperty.item:TFT9_Piltover_Charges@</TFTBonus> <rules>(doubled in Hyper Roll)</rules><br>Charges granted next loss: <TFTBonus>+@TFTUnitProperty.item:TFT9_Piltover_ChargesToGrant@</TFTBonus><br>Current loot value on victory: <TFTBonus>@TFTUnitProperty.item:TFT9_Piltover_ProgressGoldValue@ gold</TFTBonus><br><br><tftitemrules>[This does not count as an item.]</tftitemrules>",
+            "composition": [
+                "TFT_Item_NegatronCloak",
+                "TFT_Item_RecurveBow"
+            ],
+            "desc": "Attacks fire a bolt at a nearby enemy, dealing @MultiplierForDamage@% Attack Damage %i:scaleAD% as physical damage.",
             "effects": {
-                "TooltipStartingCharge": "null"
+                "AD": 0.20000000298023224,
+                "AS": 10,
+                "AdditionalTargets": 1,
+                "MagicResist": 20,
+                "MultiplierForDamage": 50
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Set9_Inventor/TFT9_PiltoverCharges.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/runaans_hurricane.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Charges",
+            "name": "Runaan's Hurricane",
             "unique": false
         },
         {
-            "apiName": "TFT9_Item_CrownOfDemacia_DU",
+            "apiName": "TFT_Item_Bloodthirster",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "If the holder begins combat in the front 2 rows, regenerate @HealingPercentPerTickPerStage@-@HealingPercentPerTickPerStage*7@% maximum Health every @HealTickRate@ seconds (based on stage). If they start in the back 2 rows, gain @ADandAPPerTick@-@ADandAPPerTick*7@% %i:scaleAD% Attack Damage and %i:scaleAP% Ability Power every @HealTickRate@ seconds instead. <br><br>If the holder of this item dies, you instantly lose the fight.<br><br><tftitemrules>You can remove this item by benching the holder.</tftitemrules><br><br><tftitemrules>Double Up: This item no longer causes you to lose the fight that round if it's holder is part of a reinforcement.</tftitemrules><br>",
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_NegatronCloak"
+            ],
+            "desc": "Gaing @Lifesteal@% <TFTKeyword>Omnivamp</TFTKeyword>.<br><br>Once per combat at @HealthThreshold@% Health, gain a @ShieldHealthPercent@% max Health Shield that lasts up to @ShieldDuration@ seconds.<br><br><tftitemrules><tftbold>Omnivamp</tftbold>: heal for some of damage dealt</tftitemrules>",
             "effects": {
-                "ADandAPPerTick": 1,
-                "AS": 40,
-                "HealTickRate": 2,
-                "HealingPercentPerTickPerStage": 2,
-                "Health": 400
+                "AD": 0.20000000298023224,
+                "HealthThreshold": 40,
+                "LifeSteal": 20,
+                "MagicResist": 20,
+                "ShieldDuration": 5,
+                "ShieldHealthPercent": 25
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_RegionItems/CrownOfDemacia.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/bloodthirster.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Crown of Demacia",
+            "name": "Bloodthirster",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_ArchangelsStaff",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "Combat start: Gain @APPerInterval@ Ability Power every @IntervalSeconds@ seconds in combat.",
+            "effects": {
+                "AP": 20,
+                "APPerInterval": 25,
+                "IntervalSeconds": 5,
+                "Mana": 15
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/archangel_staff.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Archangel's Staff",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_SpearOfShojin",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "Attacks grant @FlatManaRestore@ bonus Mana.",
+            "effects": {
+                "AD": 0.15000000596046448,
+                "AP": 25,
+                "FlatManaRestore": 5,
+                "Mana": 15
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/spear_of_shojin.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Spear of Shojin",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_SpectralGauntlet",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NegatronCloak",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "@ARReductionAmount@% <TFTKeyword>Sunder</TFTKeyword> enemies within @HexRange@ hexes. Gain @BonusResists@ Armor and Magic Resist for the first @BonusResistDuration@ seconds of combat.<br><br><tftitemrules><tftbold>Sunder</tftbold>: Reduce Armor</tftitemrules>",
+            "effects": {
+                "ARReductionAmount": 30,
+                "BonusResistDuration": 10,
+                "BonusResists": 20,
+                "Health": 150,
+                "HexRange": 2,
+                "MagicResist": 20
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/evenshroud.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Evenshroud",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Leviathan",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_RecurveBow",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "After casting an Ability, gain @AttackSpeedToGive@% Attack Speed for @ASDuration@ seconds.",
+            "effects": {
+                "AP": 30,
+                "AS": 10,
+                "ASDuration": 5,
+                "AttackSpeedToGive": 40,
+                "Health": 150
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/nashors_tooth.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Nashor's Tooth",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Morellonomicon",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "Ability damage deals @BurnPercent@% <TFTKeyword>Burn</TFTKeyword> and @GrievousWoundsPercent@% <TFTKeyword>Wound</TFTKeyword> to enemies for @BurnDuration@ seconds.<br><br><tftitemrules>[Unique - only 1 per champion]<br><tftbold>Burn</tftbold>: Deals a percent of the target's maximum Health as true damage every second<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules>",
+            "effects": {
+                "AP": 25,
+                "BurnDuration": 10,
+                "BurnPercent": 1,
+                "GrievousWoundsPercent": 33,
+                "Health": 150,
+                "MonsterCap": 100,
+                "TicksPerSecond": 1
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/morellonomicon.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Morellonomicon",
             "unique": true
         },
         {
-            "apiName": "TFT9_Item_OrnnHorizonFocus",
+            "apiName": "TFT_Item_RapidFireCannon",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "Gain %i:scaleRange% @HexRangeIncrease@ Attack Range. Damage is increasedy by @PercentDamageIncrease@% for each hex between the holder and their target.",
+            "composition": [
+                "TFT_Item_RecurveBow",
+                "TFT_Item_RecurveBow"
+            ],
+            "desc": "Deal @BonusDamage*100@% bonus damage.<br><br>Gain %i:scaleRange% @HexRangeIncrease@ bonus Attack Range.",
+            "effects": {
+                "AS": 35,
+                "BonusDamage": 0.11999999731779099,
+                "HexRangeIncrease": 1,
+                "{9f5117db}": 100
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/rapid_fire_cannon.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Rapid Firecannon",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Crownguard",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_ChainVest"
+            ],
+            "desc": "Combat start: Gain a @ShieldSize@% max Health Shield for @ShieldDuration@ seconds.<br>When the shield expires, gain @ShieldBonusAP@ Ability Power.<br>",
+            "effects": {
+                "AP": 20,
+                "Armor": 20,
+                "HexRange": 2,
+                "ShieldBonusAP": 40,
+                "ShieldDuration": 8,
+                "ShieldSize": 30,
+                "{9b5d330d}": 4
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/crownguard.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Crownguard",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_AdaptiveHelm",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NegatronCloak",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "Combat start: Gain different bonuses based on starting position.<br><br>Front Two Rows: @FrontRowBonusResists@ Armor and Magic Resist.<br><br>Back Two Rows: @BackRowBonusAP@ Ability Power. Gain @ManaPerTickrate@ Mana every @ManaTickrate@ seconds.<br>",
+            "effects": {
+                "AP": 15,
+                "BackRowBonusAP": 20,
+                "FrontRowBonusResists": 35,
+                "MagicResist": 20,
+                "Mana": 15,
+                "ManaPerTickrate": 10,
+                "ManaTickrate": 3,
+                "{d357c9f2}": "null"
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/adaptive_helm.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Adaptive Helm",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_BlueBuff",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_TearOfTheGoddess",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "Max mana reduced by @ManaReduction@. <br><br>If the holder gets a takedown within @TakedownTimer@ seconds of casting, gain @ManaOnTakedown@ Mana.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AP": 25,
+                "Mana": 40,
+                "ManaOnTakedown": 10,
+                "ManaReduction": 10,
+                "TakedownTimer": 3
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/blue_buff.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Blue Buff",
+            "unique": true
+        },
+        {
+            "apiName": "TFT_Item_LastWhisper",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_RecurveBow",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Physical damage @ArmorReductionPercent@% <TFTKeyword>Sunders</TFTKeyword> the target for @ArmorBreakDuration@ seconds. This effect does not stack.<br><br><tftitemrules>[Unique - only 1 per champion]<br><tftbold>Sunder</tftbold>: Reduce Armor</tftitemrules>",
+            "effects": {
+                "AD": 0.15000000596046448,
+                "AS": 25,
+                "ArmorBreakDuration": 3,
+                "ArmorReductionPercent": 30,
+                "CritChance": 20
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/last_whisper.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Last Whisper",
+            "unique": true
+        },
+        {
+            "apiName": "TFT_Item_JeweledGauntlet",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_NeedlesslyLargeRod",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Abilities can critically strike.",
+            "effects": {
+                "AP": 30,
+                "CritChance": 35
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/jeweled_guantlet.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Jeweled Gauntlet",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_NightHarvester",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_ChainVest",
+                "TFT_Item_SparringGloves"
+            ],
+            "desc": "Deal @BaseDamageAmpPct@% bonus damage. After falling below @MissingHPForMax@% Health, increase this to @TOOLTIPTotalDamageAmp@% for the rest of combat.",
             "effects": {
                 "AD": 0.15000000596046448,
                 "AP": 15,
-                "AS": 15,
-                "HexRangeIncrease": 1,
-                "PercentDamageIncrease": 10
+                "Armor": 25,
+                "BaseDamageAmpPct": 12,
+                "CritChance": 20,
+                "DamageAmpPct": 18,
+                "MissingHPForMax": 60,
+                "TOOLTIPTotalDamageAmp": 30
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_SnipersFocus.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/night_harvester.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Sniper's Focus",
+            "name": "Night Harvester",
             "unique": false
         },
         {
-            "apiName": "TFT9_Item_CrownOfDemacia",
+            "apiName": "TFT_Item_ForceOfNature",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "If the holder begins combat in the front 2 rows, regenerate @HealingPercentPerTickPerStage@-@HealingPercentPerTickPerStage*7@% maximum Health every @HealTickRate@ seconds (based on stage). If they start in the back 2 rows, gain @ADandAPPerTick@-@ADandAPPerTick*7@% %i:scaleAD% Attack Damage and %i:scaleAP% Ability Power every @HealTickRate@ seconds instead. <br><br>If the holder of this item dies, you instantly lose the fight.<br><br><tftitemrules>You can remove this item by benching the holder.</tftitemrules><br><br>",
+            "composition": [
+                "TFT_Item_Spatula",
+                "TFT_Item_Spatula"
+            ],
+            "desc": "Your team gains +@MaxArmySizeIncrease@ maximum team size.",
             "effects": {
-                "ADandAPPerTick": 1,
-                "AS": 40,
-                "HealTickRate": 2,
-                "HealingPercentPerTickPerStage": 2,
-                "Health": 400
+                "MaxArmySizeIncrease": 1
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/TFT9_RegionItems/CrownOfDemacia.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/tacticians_crown.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Crown of Demacia",
+            "name": "Tactician's Crown",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_Quicksilver",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_SparringGloves",
+                "TFT_Item_NegatronCloak"
+            ],
+            "desc": "Combat start: Gain immunity to crowd control for @SpellShieldDuration@ seconds.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "effects": {
+                "AS": 30,
+                "CritChance": 20,
+                "MagicResist": 30,
+                "SpellShieldDuration": 18
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/quicksilver.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Quicksilver",
             "unique": true
         },
         {
-            "apiName": "TFT9_Item_OrnnPrototypeForge",
+            "apiName": "TFT_Item_Deathblade",
             "associatedTraits": [],
-            "composition": [],
-            "desc": "Each round: Equip 2 random Ornn Artifacts.<br><br><tftitemrules>[Consumes 3 item slots.]</tftitemrules>",
-            "effects": {},
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_BlacksmithsGloves.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [],
-            "name": "Blacksmith's Gloves",
-            "unique": false
-        },
-        {
-            "apiName": "TFT9_Item_PiltoverProgress",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "Gain Power by winning combats after gaining Charges. More Power gives more stats.<br><br><tftitemrules>[This does not count as an item.]</tftitemrules>",
-            "effects": {},
-            "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Set9_Inventor/TFT9_PiltoverPower.TFT_Set9.tex",
-            "id": null,
-            "incompatibleTraits": [],
-            "name": "Power",
-            "unique": false
-        },
-        {
-            "apiName": "TFT9_Item_OrnnDeathfireGrasp",
-            "associatedTraits": [],
-            "composition": [],
-            "desc": "Combat start: Blast the current target for @PercentMaxHealthDamage*100@% of their max Health as magic damage.<br><br>For the next @Duration@ seconds, deal @BaseAmp*100@% more damage. Damage dealt to the blasted target is increased to @BonusAmp*100@%.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_BFSword"
+            ],
+            "desc": "<tftitemrules>Perfect peace and calm for the holder - and all who face it.</tftitemrules>",
             "effects": {
-                "AP": 50,
-                "BaseAmp": 0.25,
-                "BonusAmp": 0.3499999940395355,
-                "Duration": 10,
-                "Mana": 30,
-                "PercentMaxHealthDamage": 0.20000000298023224
+                "AD": 0.6600000262260437
             },
             "from": null,
-            "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_DeathfireGrasp.TFT_Set9.tex",
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/death_blade.png",
             "id": null,
             "incompatibleTraits": [],
-            "name": "Deathfire Grasp",
-            "unique": true
+            "name": "Deathblade",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_WarmogsArmor",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_GiantsBelt",
+                "TFT_Item_GiantsBelt"
+            ],
+            "desc": "<tftitemrules>Tough as teak, strong as oak, and eternal as petricite.</tftitemrules>",
+            "effects": {
+                "Health": 800
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/warmogs_armor.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Warmog's Armor",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_StatikkShiv",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_RecurveBow",
+                "TFT_Item_TearOfTheGoddess"
+            ],
+            "desc": "Every 3rd attack deals @Damage@ magic damage and @MRShred@% <TFTKeyword>Shreds</TFTKeyword> @1StarBounces@ enemies for @MRShredDuration@ seconds.<br><br><tftitemrules><tftbold>Shred</tftbold>: Reduce Magic Resist</tftitemrules>",
+            "effects": {
+                "1StarBounces": 4,
+                "AP": 15,
+                "AS": 20,
+                "Damage": 30,
+                "MRShred": 30,
+                "MRShredDuration": 5,
+                "Mana": 15,
+                "{12a15e9e}": 4,
+                "{15144cec}": 4,
+                "{79e2ec7b}": 4
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/statikk_shiv.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Statikk Shiv",
+            "unique": false
+        },
+        {
+            "apiName": "TFT_Item_HextechGunblade",
+            "associatedTraits": [],
+            "composition": [
+                "TFT_Item_BFSword",
+                "TFT_Item_NeedlesslyLargeRod"
+            ],
+            "desc": "Gain @OmniVamp@% <TFTKeyword>Omnivamp</TFTKeyword>, which also heals the lowest percent Health ally.<br><br><TFTTrackerLabel>Healing:</TFTTrackerLabel> <TFTHighlight>@TFTUnitProperty.item:TFT_Tracker_Value1@</TFTHighlight><br><br><tftitemrules><tftbold>Omnivamp</tftbold>: heal for some of damage dealt</tftitemrules>",
+            "effects": {
+                "AD": 0.10000000149011612,
+                "AP": 10,
+                "Omnivamp": 22
+            },
+            "from": null,
+            "icon": "https://raw.communitydragon.org/latest/game/assets/maps/particles/tft/item_icons/standard/hextech_gunblade.png",
+            "id": null,
+            "incompatibleTraits": [],
+            "name": "Hextech Gunblade",
+            "unique": false
         }
     ]
 }
