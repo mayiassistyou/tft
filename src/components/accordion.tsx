@@ -49,7 +49,9 @@ export default function Accordion({
             ? "max-height .5s ease-in"
             : "max-height .5s ease-out",
         }}
-        className={`overflow-hidden ${isExpanded ? "max-h-96" : "max-h-0"}`}
+        className={`overflow-hidden ${
+          isExpanded ? "max-h-[1000px]" : "max-h-0"
+        }`}
       >
         <div className={`py-2 ${isExpanded ? "" : "display-none"}`}>
           {content}

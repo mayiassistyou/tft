@@ -58,7 +58,7 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
       const newCombinesItem = getCombinesItems(components, items, selectedItem);
       setCombinesItems(newCombinesItem);
     }
-  }, [selectedItemApiName]);
+  }, [selectedItemApiName, components, items]);
 
   function handleItemClick(apiName: string) {
     if (!apiName || apiName === selectedItemApiName) return;

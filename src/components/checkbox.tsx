@@ -1,6 +1,4 @@
-"use client";
-
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
 type Props = {
   icon: ReactNode;
@@ -17,10 +15,14 @@ export default function Checkbox(props: Props): JSX.Element {
   return (
     <div
       className="group flex items-center justify-between gap-2
-      hover:cursor-pointer my-1"
+      hover:cursor-pointer my-2"
       onClick={() => handleChange(value, !isSelected)}
     >
-      <div className={`max-h-6 max-w-6 ${isSelected ? "text-white" : ""}`}>
+      <div
+        className={`max-h-6 max-w-6 ${
+          isSelected ? "opacity-100 text-white" : "opacity-70"
+        }`}
+      >
         {icon}
       </div>
       <div className="flex-grow text-white">{title}</div>
