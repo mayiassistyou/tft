@@ -12,7 +12,7 @@ type NavItemProps = {
 };
 
 function NavItem({ label, url, pathname }: NavItemProps): JSX.Element {
-  const isActive = pathname.replace("/", "") === url.replace("/", "");
+  const isActive = pathname.replace("/", "").startsWith(url.replace("/", ""));
 
   return (
     <Link href={url}>
@@ -42,6 +42,7 @@ export default function Header(): JSX.Element {
             <Image
               src="/images/duckbill.png"
               alt="Duckbill"
+              unoptimized
               height={32}
               width={32}
             />
@@ -50,11 +51,11 @@ export default function Header(): JSX.Element {
         </Link>
       </Container>
       <div className="bg-cyan-950 border-y border-cyan-900 flex justify-center">
-        <NavItem label="Team Comps" url="comps" pathname={pathname} />
-        <NavItem label="Meta Report" url="report" pathname={pathname} />
-        <NavItem label="Champions" url="champions" pathname={pathname} />
-        <NavItem label="Tier List" url="tier-list" pathname={pathname} />
-        <NavItem label="Item Builder" url="items" pathname={pathname} />
+        <NavItem label="Team Comps" url="/comps" pathname={pathname} />
+        <NavItem label="Meta Report" url="/report" pathname={pathname} />
+        <NavItem label="Champions" url="/champions" pathname={pathname} />
+        <NavItem label="Tier List" url="/tier-list" pathname={pathname} />
+        <NavItem label="Item Builder" url="/items" pathname={pathname} />
       </div>
     </>
   );

@@ -47,7 +47,7 @@ export default function ItemBox(props: Props): JSX.Element {
 
     return (
       <>
-        <div className="flex gap-2 w-full border-b border-cyan-900 px-4 py-2 mb-2">
+        <div className="flex gap-2 w-full border-b border-cyan-900 px-6 py-4 mb-2">
           <Image
             src={item.icon}
             alt={item.name}
@@ -69,7 +69,7 @@ export default function ItemBox(props: Props): JSX.Element {
           className="text-white border-b border-cyan-900 px-4 py-2 mb-2"
         ></div>
 
-        <div className="flex items-center gap-2 px-4 py-2">
+        <div className="flex items-center gap-2 p-2">
           <span>{isComponentItem ? "Into:" : "Recipe:"}</span>
           <div className="flex gap-2">
             {intoOrRecipeItems?.map((i: any, index: number) => (
