@@ -128,7 +128,7 @@ export default function ChampionDetail({
           const { desc: traitDesc, descByLevel } = generateTraitDesc(trait);
 
           return (
-            <Box className="flex items-start gap-6 mb-4">
+            <Box key={trait.apiName} className="flex items-start gap-6 mb-4">
               <Image
                 src={trait.icon}
                 alt={trait.name}
