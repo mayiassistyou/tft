@@ -1,29 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { CombinesItemType, ItemType } from "@/types/item.type";
 import ItemBox from "./item-box";
-import ItemDetail from "./item-detail";
 import Input from "../input";
+import Table, { TData, THead, TRow } from "../table";
+import { CombinesItemType, ItemType } from "@/types/item.type";
 import getCombinesItems from "@/utils/getCombinesItems";
-
-type ItemHeadingProps = {
-  label: string;
-};
-
-function ItemHeading({ label }: ItemHeadingProps): JSX.Element {
-  return (
-    <div className="border-b border-cyan-900 mb-4 py-1">
-      <span
-        className="text-white text-lg font-bold px-2 py-1 border-b-4
-      border-amber-600"
-      >
-        {label}
-      </span>
-    </div>
-  );
-}
+import generateItemDesc from "@/utils/generateItemDesc";
+import CharacterHeader from "../character-header";
 
 type ItemProps = {
   components: ItemType[];
@@ -96,7 +82,7 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
           handleInputChange={handleInputChange}
         />
 
-        <ItemHeading label="Base Items" />
+        <CharacterHeader label="Base Items" />
         <div className="grid grid-cols-6 gap-2 mb-6">
           {searchedComponents.map((component: ItemType) => (
             <ItemBox
@@ -111,7 +97,7 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
           ))}
         </div>
 
-        <ItemHeading label="Combined Items" />
+        <CharacterHeader label="Combined Items" />
         <div className="grid grid-cols-6 gap-2">
           {searchedItems.map((item: ItemType) => (
             <ItemBox
@@ -128,13 +114,81 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
       </div>
 
       <div className="w-3/4 border-l border-cyan-900 pl-4">
-        <ItemDetail
-          item={selectedItem}
-          combinesItems={combinesItems}
-          handleItemClick={handleItemClick}
-          components={components}
-          items={items}
-        />
+        <h2
+          className="text-2xl font-bold text-white pb-4 mb-4 border-b 
+      border-cyan-800"
+        >
+          TFT Items Cheat Sheet
+        </h2>
+
+        <div className="flex items-center mb-6">
+          <Image
+            src={selectedItem.icon}
+            alt={selectedItem.name}
+            unoptimized
+            width={30}
+            height={30}
+            className="border border-cyan-800 mr-4"
+          />
+
+          <span className="text-white text-lg leading-0 font-bold">
+            {selectedItem.name}
+          </span>
+        </div>
+
+        <Table>
+          <colgroup>
+            <col className="w-32" />
+          </colgroup>
+
+          <THead>
+            <TRow>
+              <TData>Recipe</TData>
+              <TData>Combines Into</TData>
+            </TRow>
+          </THead>
+
+          <tbody>
+            {combinesItems.map((combinesItem, index) => (
+              <TRow key={index}>
+                <TData>
+                  <div className="flex items-center gap-2">
+                    <ItemBox
+                      item={combinesItem.recipes[0]}
+                      handleItemClick={handleItemClick}
+                      size={35}
+                      components={components}
+                      items={items}
+                    />
+                    <ItemBox
+                      item={combinesItem.recipes[1]}
+                      handleItemClick={handleItemClick}
+                      size={35}
+                      components={components}
+                      items={items}
+                    />
+                  </div>
+                </TData>
+                <TData>
+                  <div className="flex items-center gap-4">
+                    <ItemBox
+                      item={combinesItem.combine}
+                      handleItemClick={handleItemClick}
+                      size={35}
+                      components={components}
+                      items={items}
+                    />
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: generateItemDesc(combinesItem.combine),
+                      }}
+                    />
+                  </div>
+                </TData>
+              </TRow>
+            ))}
+          </tbody>
+        </Table>
       </div>
     </div>
   );

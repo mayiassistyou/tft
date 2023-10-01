@@ -67,7 +67,7 @@ export default function ItemBox(props: Props): JSX.Element {
             __html: generateItemDesc(item),
           }}
           className="text-white border-b border-cyan-900 px-4 py-2 mb-2"
-        ></div>
+        />
 
         <div className="flex items-center gap-2 p-2">
           <span>{isComponentItem ? "Into:" : "Recipe:"}</span>
