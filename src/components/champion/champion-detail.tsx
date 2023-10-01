@@ -147,8 +147,8 @@ export default function ChampionDetail({
                 />
 
                 {descByLevel.length > 0
-                  ? descByLevel.map((item) => (
-                      <div className="flex items-center gap-4 my-1">
+                  ? descByLevel.map((item, index: number) => (
+                      <div key={index} className="flex items-center gap-4 my-1">
                         <NumberCircle label={item.unit} />
                         <span className="text-white text-base">
                           {item.desc}
