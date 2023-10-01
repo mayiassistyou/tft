@@ -125,7 +125,11 @@ export default function ChampionDetail({
         {traits.map((trait) => {
           if (!trait) return null;
 
-          const { desc: traitDesc, descByLevel } = generateTraitDesc(trait);
+          const {
+            desc: traitDesc,
+            descByLevels,
+            rules,
+          } = generateTraitDesc(trait);
 
           return (
             <Box key={trait.apiName} className="flex items-start gap-6 mb-4">
@@ -143,19 +147,31 @@ export default function ChampionDetail({
                   dangerouslySetInnerHTML={{
                     __html: traitDesc,
                   }}
-                  className="mt-4"
+                  className="my-4"
                 />
 
-                {descByLevel.length > 0
-                  ? descByLevel.map((item, index: number) => (
+                {descByLevels.length > 0
+                  ? descByLevels.map((item, index: number) => (
                       <div key={index} className="flex items-center gap-4 my-1">
                         <NumberCircle label={item.unit} />
-                        <span className="text-white text-base">
-                          {item.desc}
-                        </span>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: item.desc,
+                          }}
+                          className="text-white text-base"
+                        />
                       </div>
                     ))
                   : null}
+
+                {rules ? (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: rules,
+                    }}
+                    className="mt-4"
+                  />
+                ) : null}
               </div>
             </Box>
           );

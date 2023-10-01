@@ -361,7 +361,7 @@
   },
   {
     "apiName": "Set9_Noxus",
-    "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by @BonusRatio*100@% for each different opponent that either you have conquered in combat or is dead.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br><TFTTrackerLabel>Conquered bonus: @TFTUnitProperty.trait:TFT9_Trait_ConquerorBonus@% / @BonusRatio*700@%</TFTTrackerLabel>",
+    "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by @BonusRatio*100@% for each different opponent that either you have conquered in combat or is dead.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br>",
     "effects": [
       {
         "maxUnits": 4,
