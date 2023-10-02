@@ -115,7 +115,7 @@
             "Slayer",
             "Juggernaut"
         ],
-        "slug": "aatrox"
+        "slug": "tft9b_aatrox"
     },
     {
         "ability": {
@@ -220,7 +220,7 @@
             "Ionia",
             "Sorcerer"
         ],
-        "slug": "ahri"
+        "slug": "tft9_ahri"
     },
     {
         "ability": {
@@ -337,7 +337,7 @@
             "Targon",
             "Gunner"
         ],
-        "slug": "aphelios"
+        "slug": "tft9_aphelios"
     },
     {
         "ability": {
@@ -430,7 +430,7 @@
             "Freljord",
             "Vanquisher"
         ],
-        "slug": "ashe"
+        "slug": "tft9_ashe"
     },
     {
         "ability": {
@@ -511,7 +511,7 @@
             "Shurima",
             "Strategist"
         ],
-        "slug": "azir"
+        "slug": "tft9_azir"
     },
     {
         "ability": {
@@ -616,7 +616,7 @@
             "Void",
             "Empress"
         ],
-        "slug": "belveth"
+        "slug": "tft9_belveth"
     },
     {
         "ability": {
@@ -698,7 +698,7 @@
             "Shurima",
             "Invoker"
         ],
-        "slug": "cassiopeia"
+        "slug": "tft9_cassiopeia"
     },
     {
         "ability": {
@@ -767,7 +767,7 @@
             "Void",
             "Bruiser"
         ],
-        "slug": "chogath"
+        "slug": "tft9_chogath"
     },
     {
         "ability": {
@@ -849,7 +849,7 @@
             "Juggernaut",
             "Vanquisher"
         ],
-        "slug": "darius"
+        "slug": "tft9_darius"
     },
     {
         "ability": {
@@ -931,7 +931,7 @@
             "Piltover",
             "Rogue"
         ],
-        "slug": "ekko"
+        "slug": "tft9_ekko"
     },
     {
         "ability": {
@@ -1012,7 +1012,7 @@
             "Demacia",
             "Challenger"
         ],
-        "slug": "fiora"
+        "slug": "tft9_fiora"
     },
     {
         "ability": {
@@ -1105,7 +1105,7 @@
             "Demacia",
             "Invoker"
         ],
-        "slug": "galio"
+        "slug": "tft9_galio"
     },
     {
         "ability": {
@@ -1235,7 +1235,7 @@
             "Gunner",
             "Reaver King"
         ],
-        "slug": "gangplank"
+        "slug": "tft9_gangplank"
     },
     {
         "ability": {
@@ -1317,7 +1317,7 @@
             "Gunner",
             "Rogue"
         ],
-        "slug": "graves"
+        "slug": "tft9_graves"
     },
     {
         "ability": {
@@ -1374,7 +1374,7 @@
             "Piltover",
             "Technogenius"
         ],
-        "slug": "heimerdinger"
+        "slug": "tft9_heimerdinger"
     },
     {
         "ability": {
@@ -1443,7 +1443,7 @@
             "Bilgewater",
             "Bastion"
         ],
-        "slug": "illaoi"
+        "slug": "tft9_illaoi"
     },
     {
         "ability": {
@@ -1536,7 +1536,7 @@
             "Ionia",
             "Challenger"
         ],
-        "slug": "irelia"
+        "slug": "tft9_irelia"
     },
     {
         "ability": {
@@ -1617,7 +1617,7 @@
             "Demacia",
             "Strategist"
         ],
-        "slug": "jarvan_iv"
+        "slug": "tft9_jarvaniv"
     },
     {
         "ability": {
@@ -1722,7 +1722,7 @@
             "Piltover",
             "Gunner"
         ],
-        "slug": "jayce"
+        "slug": "tft9_jayce"
     },
     {
         "ability": {
@@ -1827,7 +1827,7 @@
             "Ionia",
             "Vanquisher"
         ],
-        "slug": "jhin"
+        "slug": "tft9_jhin"
     },
     {
         "ability": {
@@ -1920,7 +1920,7 @@
             "Zaun",
             "Gunner"
         ],
-        "slug": "jinx"
+        "slug": "tft9_jinx"
     },
     {
         "ability": {
@@ -2013,7 +2013,7 @@
             "Shurima",
             "Bastion"
         ],
-        "slug": "ksante"
+        "slug": "tft9_ksante"
     },
     {
         "ability": {
@@ -2082,7 +2082,7 @@
             "Void",
             "Challenger"
         ],
-        "slug": "kaisa"
+        "slug": "tft9_kaisa"
     },
     {
         "ability": {
@@ -2151,7 +2151,7 @@
             "Ionia",
             "Invoker"
         ],
-        "slug": "karma"
+        "slug": "tft9_karma"
     },
     {
         "ability": {
@@ -2232,7 +2232,7 @@
             "Void",
             "Bastion"
         ],
-        "slug": "kassadin"
+        "slug": "tft9_kassadin"
     },
     {
         "ability": {
@@ -2313,7 +2313,7 @@
             "Noxus",
             "Rogue"
         ],
-        "slug": "katarina"
+        "slug": "tft9_katarina"
     },
     {
         "ability": {
@@ -2418,7 +2418,7 @@
             "Demacia",
             "Slayer"
         ],
-        "slug": "kayle"
+        "slug": "tft9_kayle"
     },
     {
         "ability": {
@@ -2475,7 +2475,7 @@
             "Void",
             "Sorcerer"
         ],
-        "slug": "malzahar"
+        "slug": "tft9_malzahar"
     },
     {
         "ability": {
@@ -2556,7 +2556,7 @@
             "Ixtal",
             "Invoker"
         ],
-        "slug": "milio"
+        "slug": "tft9_milio"
     },
     {
         "ability": {
@@ -2625,7 +2625,7 @@
             "Bilgewater",
             "Strategist"
         ],
-        "slug": "miss_fortune"
+        "slug": "tft9_missfortune"
     },
     {
         "ability": {
@@ -2718,7 +2718,7 @@
             "Noxus",
             "Slayer"
         ],
-        "slug": "mordekaiser"
+        "slug": "tft9_mordekaiser"
     },
     {
         "ability": {
@@ -2812,7 +2812,7 @@
             "Shurima",
             "Challenger"
         ],
-        "slug": "naafiri"
+        "slug": "tft9_naafiri"
     },
     {
         "ability": {
@@ -2917,7 +2917,7 @@
             "Shurima",
             "Juggernaut"
         ],
-        "slug": "nasus"
+        "slug": "tft9_nasus"
     },
     {
         "ability": {
@@ -2986,7 +2986,7 @@
             "Bilgewater",
             "Juggernaut"
         ],
-        "slug": "nautilus"
+        "slug": "tft9_nautilus"
     },
     {
         "ability": {
@@ -3055,7 +3055,7 @@
             "Ixtal",
             "Bastion"
         ],
-        "slug": "neeko"
+        "slug": "tft9_neeko"
     },
     {
         "ability": {
@@ -3172,7 +3172,7 @@
             "Bilgewater",
             "Vanquisher"
         ],
-        "slug": "nilah"
+        "slug": "tft9_nilah"
     },
     {
         "ability": {
@@ -3241,7 +3241,7 @@
             "Piltover",
             "Sorcerer"
         ],
-        "slug": "orianna"
+        "slug": "tft9_orianna"
     },
     {
         "ability": {
@@ -3358,7 +3358,7 @@
             "Demacia",
             "Bastion"
         ],
-        "slug": "poppy"
+        "slug": "tft9_poppy"
     },
     {
         "ability": {
@@ -3440,7 +3440,7 @@
             "Slayer",
             "Rogue"
         ],
-        "slug": "qiyana"
+        "slug": "tft9_qiyana"
     },
     {
         "ability": {
@@ -3509,7 +3509,7 @@
             "Demacia",
             "Slayer"
         ],
-        "slug": "quinn"
+        "slug": "tft9_quinn"
     },
     {
         "ability": {
@@ -3591,7 +3591,7 @@
             "Bruiser",
             "Slayer"
         ],
-        "slug": "reksai"
+        "slug": "tft9_reksai"
     },
     {
         "ability": {
@@ -3672,39 +3672,7 @@
             "Shurima",
             "Bruiser"
         ],
-        "slug": "renekton"
-    },
-    {
-        "ability": {
-            "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons a random high tier unit instead.",
-            "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft9_ryze/hud/icons2d/tft9_ryze_r.tft_set9.png",
-            "name": "Realm Warp: Bandle City",
-            "variables": []
-        },
-        "apiName": "TFT9_Ryze",
-        "characterName": "TFT9_Ryze",
-        "cost": 5,
-        "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
-        "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
-        "stats": {
-            "armor": 30,
-            "attackSpeed": 0.8500000238418579,
-            "critChance": 0.25,
-            "critMultiplier": 1.399999976158142,
-            "damage": 50,
-            "hp": 1111,
-            "initialMana": 0,
-            "magicResist": 30,
-            "mana": 999,
-            "range": 4
-        },
-        "tileIcon": "https://raw.communitydragon.org/latest/game/assets/characters/tft9_ryze/hud/tft9_ryze_square.tft_set9.png",
-        "traits": [
-            "Wanderer",
-            "Invoker"
-        ],
-        "slug": "ryze"
+        "slug": "tft9_renekton"
     },
     {
         "ability": {
@@ -3766,7 +3734,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Demacia",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -3785,7 +3753,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzedemacia"
     },
     {
         "ability": {
@@ -3847,7 +3815,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Bandle City",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -3866,7 +3834,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzebandlecity"
     },
     {
         "ability": {
@@ -3916,7 +3884,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Freljord",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -3935,7 +3903,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzefreljord"
     },
     {
         "ability": {
@@ -4021,7 +3989,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Ionia",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4040,7 +4008,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzeionia"
     },
     {
         "ability": {
@@ -4102,7 +4070,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Noxus",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4121,7 +4089,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzenoxus"
     },
     {
         "ability": {
@@ -4171,7 +4139,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Piltover",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4190,7 +4158,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzepiltover"
     },
     {
         "ability": {
@@ -4228,7 +4196,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Shadow Isles",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4247,7 +4215,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzeshadowisles"
     },
     {
         "ability": {
@@ -4345,7 +4313,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Shurima",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4364,7 +4332,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzeshurima"
     },
     {
         "ability": {
@@ -4438,7 +4406,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Targon",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4457,7 +4425,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzetargon"
     },
     {
         "ability": {
@@ -4591,7 +4559,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Zaun",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4610,7 +4578,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzezaun"
     },
     {
         "ability": {
@@ -4732,7 +4700,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Bilgewater",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 30,
@@ -4751,7 +4719,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzebilgewater"
     },
     {
         "ability": {
@@ -4825,7 +4793,7 @@
         "characterName": "TFT9_Ryze",
         "cost": 5,
         "icon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze.tft_set9.png",
-        "name": "Ryze",
+        "name": "Ryze Ixtal",
         "squareIcon": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft9_ryze_mobile.tft_set9.png",
         "stats": {
             "armor": 50,
@@ -4844,7 +4812,7 @@
             "Wanderer",
             "Invoker"
         ],
-        "slug": "ryze"
+        "slug": "tft9_ryzeixtal"
     },
     {
         "ability": {
@@ -4901,7 +4869,7 @@
             "Noxus",
             "Challenger"
         ],
-        "slug": "samira"
+        "slug": "tft9_samira"
     },
     {
         "ability": {
@@ -4994,7 +4962,7 @@
             "Freljord",
             "Bruiser"
         ],
-        "slug": "sejuani"
+        "slug": "tft9_sejuani"
     },
     {
         "ability": {
@@ -5075,7 +5043,7 @@
             "Ionia",
             "Juggernaut"
         ],
-        "slug": "sett"
+        "slug": "tft9_sett"
     },
     {
         "ability": {
@@ -5193,7 +5161,7 @@
             "Bastion",
             "Invoker"
         ],
-        "slug": "shen"
+        "slug": "tft9_shen"
     },
     {
         "ability": {
@@ -5262,7 +5230,7 @@
             "Zaun",
             "Sorcerer"
         ],
-        "slug": "silco"
+        "slug": "tft9_silco"
     },
     {
         "ability": {
@@ -5391,7 +5359,7 @@
             "Noxus",
             "Bruiser"
         ],
-        "slug": "sion"
+        "slug": "tft9_sion"
     },
     {
         "ability": {
@@ -5460,7 +5428,7 @@
             "Demacia",
             "Multicaster"
         ],
-        "slug": "sona"
+        "slug": "tft9_sona"
     },
     {
         "ability": {
@@ -5565,7 +5533,7 @@
             "Targon",
             "Invoker"
         ],
-        "slug": "soraka"
+        "slug": "tft9_soraka"
     },
     {
         "ability": {
@@ -5659,7 +5627,7 @@
             "Strategist",
             "Sorcerer"
         ],
-        "slug": "swain"
+        "slug": "tft9_swain"
     },
     {
         "ability": {
@@ -5728,7 +5696,7 @@
             "Shurima",
             "Multicaster"
         ],
-        "slug": "taliyah"
+        "slug": "tft9_taliyah"
     },
     {
         "ability": {
@@ -5798,7 +5766,7 @@
             "Bastion",
             "Sorcerer"
         ],
-        "slug": "taric"
+        "slug": "tft9_taric"
     },
     {
         "ability": {
@@ -5867,7 +5835,7 @@
             "Bilgewater",
             "Multicaster"
         ],
-        "slug": "twisted_fate"
+        "slug": "tft9_twistedfate"
     },
     {
         "ability": {
@@ -5925,7 +5893,7 @@
             "Multicaster",
             "Sorcerer"
         ],
-        "slug": "velkoz"
+        "slug": "tft9_velkoz"
     },
     {
         "ability": {
@@ -6018,7 +5986,7 @@
             "Piltover",
             "Bruiser"
         ],
-        "slug": "vi"
+        "slug": "tft9_vi"
     },
     {
         "ability": {
@@ -6100,7 +6068,7 @@
             "Juggernaut",
             "Challenger"
         ],
-        "slug": "warwick"
+        "slug": "tft9_warwick"
     },
     {
         "ability": {
@@ -6193,6 +6161,6 @@
             "Ionia",
             "Vanquisher"
         ],
-        "slug": "xayah"
+        "slug": "tft9_xayah"
     }
 ]

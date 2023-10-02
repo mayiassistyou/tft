@@ -6,19 +6,26 @@ import Tooltip from "../tooltip";
 
 type Props = {
   champion: ChampionType;
-  traits: TraitType[];
+  championTraits: TraitType[];
+  size?: number;
+  hideName?: boolean;
 };
 
-export default function ChampionBox({ champion, traits }: Props): JSX.Element {
+export default function ChampionBox({
+  champion,
+  championTraits,
+  size = 55,
+  hideName = false,
+}: Props): JSX.Element {
   const colorByCost = {
     1: "gray-500",
     2: "green-500",
     3: "blue-600",
-    4: "violet-700",
+    4: "violet-600",
     5: "yellow-300",
   };
 
-  function ChampionBoxDetail(): JSX.Element {
+  function ChampionMoreInfo(): JSX.Element {
     return (
       <div className="flex justify-between items-stretch gap-2 h-full">
         <div className="flex flex-col items-center self-center gap-1 py-2 pl-2">
@@ -30,13 +37,15 @@ export default function ChampionBox({ champion, traits }: Props): JSX.Element {
             height={50}
             className="border border-cyan-900"
           />
-          <p className="text-white font-semibold">{champion.name}</p>
+          <p className="text-white font-semibold text-center whitespace-nowrap">
+            {champion.name}
+          </p>
         </div>
         <div
           className="flex-grow border-x border-cyan-950 flex flex-col
           justify-center p-2"
         >
-          {traits.map((trait) => (
+          {championTraits.map((trait) => (
             <div key={trait.name} className="flex items-center gap-2">
               <Image
                 src={trait.icon}
@@ -59,23 +68,27 @@ export default function ChampionBox({ champion, traits }: Props): JSX.Element {
   }
 
   return (
-    <Tooltip content={<ChampionBoxDetail />}>
+    <Tooltip content={<ChampionMoreInfo />}>
       <Link href={`/champions/${champion.slug}`}>
         <div
-          className="group flex flex-col gap-1 items-center cursor-pointer
+          className="group flex flex-col gap-2 items-center cursor-pointer
           opacity-80"
         >
           <Image
             src={champion.tileIcon}
             alt={champion.name}
             unoptimized
-            width={55}
-            height={55}
+            width={size}
+            height={size}
             className={`border border-${
               colorByCost[champion.cost as keyof typeof colorByCost]
             } group-hover:border-amber-600`}
           />
-          <p className="group-hover:text-white">{champion.name}</p>
+          {hideName ? null : (
+            <p className="group-hover:text-white text-center text-sm">
+              {champion.name}
+            </p>
+          )}
         </div>
       </Link>
     </Tooltip>

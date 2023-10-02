@@ -256,7 +256,7 @@ export default function Champion({ champions, traits }: Props): JSX.Element {
               <ChampionBox
                 key={champion.apiName}
                 champion={champion}
-                traits={championTraits}
+                championTraits={championTraits}
               />
             );
           })}

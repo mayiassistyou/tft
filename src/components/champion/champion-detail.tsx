@@ -3,9 +3,10 @@ import Image from "next/image";
 import { GiTwoCoins } from "react-icons/gi";
 import CharacterHeader from "../character-header";
 import Box from "../box";
+import NumberCircle from "../number-circle";
 import { TraitType } from "@/types/trait.type";
 import generateTraitDesc from "@/utils/generateTraitDesc";
-import NumberCircle from "../number-circle";
+import ChampionBox from "./champion-box";
 
 type ChampionStatProps = {
   title: string;
@@ -14,7 +15,12 @@ type ChampionStatProps = {
 
 type Props = {
   champion: ChampionType;
-  traits: (TraitType | undefined)[];
+  championTraits: TraitType[];
+  synergies: {
+    traitApiName: string;
+    traitIcon: string;
+    champions: ChampionType[];
+  }[];
 };
 
 function ChampionStat({ title, value }: ChampionStatProps): JSX.Element {
@@ -28,7 +34,8 @@ function ChampionStat({ title, value }: ChampionStatProps): JSX.Element {
 
 export default function ChampionDetail({
   champion,
-  traits,
+  championTraits,
+  synergies,
 }: Props): JSX.Element {
   const isPassiveAbility = champion.ability.desc.includes(
     "<spellPassive>Passive:</spellPassive>",
@@ -82,7 +89,7 @@ export default function ChampionDetail({
       </div>
 
       <div className="pl-4 w-3/4 border-l border-cyan-900">
-        <CharacterHeader label="Abilities" />
+        <CharacterHeader label="Abilities" textSize="xl" />
         <Box className="flex items-start gap-6 mb-4">
           <Image
             src={champion.ability.icon}
@@ -118,11 +125,16 @@ export default function ChampionDetail({
               </div>
             </div>
 
-            <div className="mt-4 mr-5 text-lg">{champion.ability.desc}</div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: champion.ability.desc,
+              }}
+              className="mt-4 mr-5 text-lg"
+            />
           </div>
         </Box>
 
-        {traits.map((trait) => {
+        {championTraits.map((trait) => {
           if (!trait) return null;
 
           const {
@@ -177,7 +189,32 @@ export default function ChampionDetail({
           );
         })}
 
-        <CharacterHeader label="Synergies" />
+        <CharacterHeader label="Synergies" textSize="xl" />
+        {synergies.map((synergy) => (
+          <Box
+            key={synergy.traitApiName}
+            className="flex items-center my-4 gap-8"
+          >
+            <Image
+              src={synergy.traitIcon}
+              alt={synergy.traitApiName}
+              unoptimized
+              height={28}
+              width={28}
+            />
+            <div className="grid grid-cols-10 gap-6">
+              {synergy.champions.map((champion) => (
+                <ChampionBox
+                  key={champion.apiName}
+                  champion={champion}
+                  championTraits={championTraits}
+                  size={50}
+                  hideName
+                />
+              ))}
+            </div>
+          </Box>
+        ))}
       </div>
     </div>
   );

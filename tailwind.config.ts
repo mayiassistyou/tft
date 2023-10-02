@@ -19,10 +19,6 @@ const config: Config = {
     },
   },
   plugins: [],
-  safelist: [
-    {
-      pattern: /border-\w+-[1-9]00/,
-    },
-  ],
+  safelist: [{ pattern: /border-\w+-[1-9]00/ }, { pattern: /text-/ }],
 };
 export default config;

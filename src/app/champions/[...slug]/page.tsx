@@ -23,5 +23,21 @@ export default async function Champion({
     traits.find((t) => t.name === trait),
   );
 
-  return <ChampionDetail champion={champion} traits={championTraits} />;
+  const synergies = championTraits.map((trait) => ({
+    traitApiName: trait?.apiName || "",
+    traitIcon: trait?.icon || "",
+    champions: [...champions].filter(
+      (champion) =>
+        champion.traits.includes(trait?.name || "") &&
+        champion.slug !== params.slug[0],
+    ),
+  }));
+
+  return (
+    <ChampionDetail
+      champion={champion}
+      championTraits={championTraits as TraitType[]}
+      synergies={synergies}
+    />
+  );
 }
