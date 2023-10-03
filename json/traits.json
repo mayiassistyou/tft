@@ -1,1145 +1,874 @@
 [
   {
-    "apiName": "Set9_Bastion",
-    "desc": "Bastion champions gain Armor and Magic Resist. This is increased by @BonusPercent*100@% for the first @Duration@ seconds of combat.<br><br><expandRow>(@MinUnits@) +@BonusArmor@ %i:scaleArmor%, +@BonusArmor@ %i:scaleMR%</expandRow>",
-    "effects": [
+    "key": "Bilgewater",
+    "ingameKey": "Set9b_Bilgewater",
+    "name": "Bilgewater",
+    "desc": "Bilgerat attacks and Abilities mark enemies. The mark stores a percentage of damage dealt to the enemy by Bilgerats.<br><br>Marked enemies are struck by a cannonball after 1.5 seconds, dealing the stored damage plus a flat value as physical damage.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bilgewater_normal_1693031563-Bilgewater-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bilgewater_black_1693031563-Bilgewater-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bilgewater_white_1693031563-Bilgewater-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusArmor": 20,
-          "BonusMR": 20,
-          "BonusPercent": 1,
-          "Duration": 10,
-          "{09b7d38c}": 2
-        }
+        "style": "bronze",
+        "min": 3,
+        "max": 4
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "BonusArmor": 45,
-          "BonusMR": 45,
-          "BonusPercent": 1,
-          "Duration": 10,
-          "{09b7d38c}": 2
-        }
+        "style": "silver",
+        "min": 5,
+        "max": 6
       },
       {
-        "maxUnits": 7,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BonusArmor": 75,
-          "BonusMR": 75,
-          "BonusPercent": 1,
-          "Duration": 10,
-          "{09b7d38c}": 2
-        }
+        "style": "gold",
+        "min": 7,
+        "max": 8
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 8,
-        "style": 4,
-        "variables": {
-          "BonusArmor": 140,
-          "BonusMR": 140,
-          "BonusPercent": 1,
-          "Duration": 10,
-          "{09b7d38c}": 2
-        }
+        "style": "chromatic",
+        "min": 9
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_bastion.tft_set9.png",
-    "name": "Bastion"
+    "stats": {
+      "3": "100 + 33% Damage dealt",
+      "5": "150 + 55% Damage dealt",
+      "7": "325 + 70% Damage dealt",
+      "9": "800 + 135% Damage dealt; nearby enemies take 50% of cannonball damage"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Sorcerer",
-    "desc": "Sorcerers gain bonus Ability Power.<br><br>When an enemy dies after being damaged by a Sorcerer, they deal a percentage of that enemy's maximum Health to another enemy.<br><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth% to @TargetNum@ enemies</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth% to @TargetNum@ enemies</row>",
-    "effects": [
+    "key": "Darkin",
+    "ingameKey": "Set9b_Darkin",
+    "name": "Darkin",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Darkin_normal_1685076446-Darkin-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Darkin_black_1685076446-Darkin-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Darkin_white_1685076446-Darkin-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusAP": 25,
-          "HealthPct": 0.07000000029802322,
-          "TargetNum": 1,
-          "{a34f32df}": 3
-        }
+        "style": "bronze",
+        "min": 1,
+        "max": 1
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "BonusAP": 50,
-          "HealthPct": 0.10000000149011612,
-          "TargetNum": 1,
-          "{a34f32df}": 3
-        }
-      },
-      {
-        "maxUnits": 7,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BonusAP": 90,
-          "HealthPct": 0.11999999731779099,
-          "TargetNum": 2,
-          "{a34f32df}": 3
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 8,
-        "style": 4,
-        "variables": {
-          "BonusAP": 135,
-          "HealthPct": 0.15000000596046448,
-          "TargetNum": 2,
-          "{a34f32df}": 3
-        }
+        "style": "gold",
+        "min": 2
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_3_sorcerer.png",
-    "name": "Sorcerer"
+    "stats": {
+      "1": "Darkin are possessed by a weapon. When they die, the weapon possesses the nearest ally champion, granting them the weapon's power.",
+      "2": "Weapon powers become 50% stronger.<br><br>Weapon powers are described in each Darkin's Ability tooltip."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Void",
-    "desc": "Get a placeable void egg. At the start of combat, it hatches into an unspeakable horror and knocks up adjacent enemies.<br><br>Each Void star level increases the horror's Health and Ability Power by @PercentHealthAPPerStarLevel*100@%. <br><br><row>(@MinUnits@) Void Remora</row><br><row>(@MinUnits@) Rift Herald</row><br><row>(@MinUnits@) Baron Nashor</row>",
-    "effects": [
+    "key": "Vanquisher",
+    "ingameKey": "Set9b_Vanquisher",
+    "name": "Vanquisher",
+    "desc": "Damage from Vanquisher Abilities can critically strike. Vanquishers gain bonus Critical Strike Chance and Critical Strike Damage.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Vanquisher_normal_1693031680-Vanquisher-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Vanquisher_black_1693031680-Vanquisher-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Vanquisher_white_1693031680-Vanquisher-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 5,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "PercentHealthAPPerStarLevel": 0.25,
-          "{a4dcb3da}": 0.4000000059604645
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 7,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "PercentHealthAPPerStarLevel": 0.25,
-          "{a4dcb3da}": 0.4000000059604645
-        }
+        "style": "gold",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 8,
-        "style": 4,
-        "variables": {
-          "PercentHealthAPPerStarLevel": 0.25,
-          "{a4dcb3da}": 0.4000000059604645
-        }
+        "style": "chromatic",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_void.tft_set9.png",
-    "name": "Void"
+    "stats": {
+      "2": "15% chance, 10% damage",
+      "4": "35% chance, 35% damage",
+      "6": "75% chance, 55% damage"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Demacia",
-    "desc": "Your strongest Demacians become Elite and equip a Radiant item each combat. Elites grant Armor and Magic Resist to themselves and adjacent allies, but this does not stack.<br><br><row>(@MinUnits@) @NumElites@ Elite, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><br><rules>Radiant items are stronger versions of full items.</rules>",
-    "effects": [
+    "key": "Juggernaut",
+    "ingameKey": "Set9_Armorclad",
+    "name": "Juggernaut",
+    "desc": "Juggernaut champions take less damage as their Health decreases.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Juggernaut_normal_1685072534-Juggernaut-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Juggernaut_black_1685072534-Juggernaut-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Juggernaut_white_1685072534-Juggernaut-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "BonusDefenses": 5,
-          "NumElites": 1
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 6,
-        "minUnits": 5,
-        "style": 3,
-        "variables": {
-          "BonusDefenses": 25,
-          "NumElites": 2
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 8,
-        "minUnits": 7,
-        "style": 4,
-        "variables": {
-          "BonusDefenses": 45,
-          "NumElites": 3
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 9,
-        "style": 5,
-        "variables": {
-          "BonusDefenses": 150,
-          "NumElites": 6
-        }
+        "style": "gold",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_demacia.tft_set9.png",
-    "name": "Demacia"
+    "stats": {
+      "2": "15% to 25% damage reduction",
+      "4": "20% to 35% damage reduction",
+      "6": "35% to 50% damage reduction"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Rogue",
-    "desc": "<row>(@MinUnits@) When a Rogue falls below @HealthThreshold*100@% Health, they briefly become untargetable and dash to an enemy within @HexRange@ hexes (preferring enemy backline).</row><br><row>(@MinUnits@) And a Rogue's damage bleeds their target for @BleedPct*100@% bonus magic damage over @BleedDuration@ seconds.</row>",
-    "effects": [
+    "key": "Bastion",
+    "ingameKey": "Set9_Bastion",
+    "name": "Bastion",
+    "desc": "Bastion champions gain Armor and Magic Resist. This is increased by 100% for the first 10 seconds of combat.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bastion_normal_1685072597-Bastion-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bastion_black_1685072597-Bastion-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bastion_white_1685072597-Bastion-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BleedDuration": "null",
-          "BleedPct": "null",
-          "DamageReduction": 100,
-          "HealthThreshold": 0.3499999940395355,
-          "HexRange": 4,
-          "StealthDuration": 1.5
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "BleedDuration": 2.5,
-          "BleedPct": 0.6000000238418579,
-          "DamageReduction": 100,
-          "HealthThreshold": 0.5,
-          "HexRange": 4,
-          "StealthDuration": 1.5
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_rogue.tft_set9.png",
-    "name": "Rogue"
+    "stats": {
+      "2": "20 Defenses",
+      "4": "45 Defenses",
+      "6": "75 Defenses",
+      "8": "140 Defenses"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Slayer",
-    "desc": "Slayers gain @Omnivamp@% Omnivamp.<br><br>Slayers deal bonus damage, doubled against units below @HealthThreshold*100@% Health.<br><br><expandRow>(@MinUnits@) +@BonusDamageBase@% bonus damage</expandRow>",
-    "effects": [
+    "key": "Bruiser",
+    "ingameKey": "Set9_Bruiser",
+    "name": "Bruiser",
+    "desc": "Your units gain 100 Health. Bruisers gain additional maximum Health.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bruiser_normal_1685072489-Bruiser-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bruiser_black_1685072489-Bruiser-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Bruiser_white_1685072489-Bruiser-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusDamageBase": 6,
-          "HealthThreshold": 0.6600000262260437,
-          "Omnivamp": 12
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "BonusDamageBase": 20,
-          "HealthThreshold": 0.6600000262260437,
-          "Omnivamp": 12
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BonusDamageBase": 40,
-          "HealthThreshold": 0.6600000262260437,
-          "Omnivamp": 12
-        }
+        "style": "gold",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_4_slayer.png",
-    "name": "Slayer"
+    "stats": {
+      "2": "+10% Health",
+      "4": "+45% Health",
+      "6": "+80% Health"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Preserver",
-    "desc": "Every @TickRate@ seconds, your units gain Mana.<br><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all</row><br><row>(@MinUnits@) Additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, and start with an additional @TeamAP@ Ability Power</row><br>",
-    "effects": [
+    "key": "Challenger",
+    "ingameKey": "Set9_Challenger",
+    "name": "Challenger",
+    "desc": "Challengers gain bonus Attack Speed. When their target dies, Challengers dash to a new target and increase their Attack Speed bonus by 50% for 2.5 seconds.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Challenger_normal_1685072521-Challenger-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Challenger_black_1685072521-Challenger-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Challenger_white_1685072521-Challenger-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "SelfBonusMana": "null",
-          "TeamAP": "null",
-          "TeamMana": 5,
-          "TickRate": 3
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "SelfBonusMana": 15,
-          "TeamAP": "null",
-          "TeamMana": 5,
-          "TickRate": 3
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 7,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "SelfBonusMana": 15,
-          "TeamAP": "null",
-          "TeamMana": 15,
-          "TickRate": 3
-        }
+        "style": "gold",
+        "min": 6,
+        "max": 7
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 8,
-        "style": 4,
-        "variables": {
-          "SelfBonusMana": "null",
-          "TeamAP": 30,
-          "TeamMana": 40,
-          "TickRate": 3
-        }
+        "style": "chromatic",
+        "min": 8
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_preserver.tft_set9.png",
-    "name": "Invoker"
+    "stats": {
+      "2": "30% Attack Speed.",
+      "4": "60% Attack Speed.",
+      "6": "95% Attack Speed.",
+      "8": "140% Attack Speed."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_ReaverKing",
-    "desc": "Gangplank uses his cutlass passive when placed in the front 2 rows and his pistol passive when placed in the back 2 rows.<br>",
-    "effects": [
+    "key": "Demacia",
+    "ingameKey": "Set9_Demacia",
+    "name": "Demacia",
+    "desc": "Your strongest Demacians become Elite and equip a random Radiant item each combat. Elites grant Armor and Magic Resist to themselves and adjacent allies, but this does not stack.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Demacia_normal_1685076467-Demacia-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Demacia_black_1685076467-Demacia-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Demacia_white_1685076234-Demacia-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 1,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {}
+        "style": "bronze",
+        "min": 3,
+        "max": 4
+      },
+      {
+        "style": "silver",
+        "min": 5,
+        "max": 6
+      },
+      {
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_reaverking.tft_set9_stage2.png",
-    "name": "Reaver King"
+    "stats": {
+      "3": "1 Elite, 5 Armor, 5 Magic resist",
+      "5": "2 Elites, 25 Armor, 25 Magic resist",
+      "7": "3 Elites, 45 Armor, 45 Magic resist",
+      "9": "6 Elites, 150 Armor, 150 Magic resist"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Bruiser",
-    "desc": "Your units gain @TeamFlatHealth@ Health. Bruisers gain additional maximum Health.<br><br><expandRow>(@MinUnits@) +@BonusPercentHealth*100@% max %i:scaleHealth%</expandRow>",
-    "effects": [
+    "key": "Empress",
+    "ingameKey": "Set9_Empress",
+    "name": "Empress",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Empress_normal_1685072779-Empress-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Empress_black_1685072779-Empress-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Empress_white_1685072779-Empress-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusPercentHealth": 0.10000000149011612,
-          "TeamFlatHealth": 100
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "BonusPercentHealth": 0.44999998807907104,
-          "TeamFlatHealth": 100
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BonusPercentHealth": 0.800000011920929,
-          "TeamFlatHealth": 100
-        }
+        "style": "gold",
+        "min": 1
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_6_bruiser.png",
-    "name": "Bruiser"
+    "stats": {
+      "1": "When Bel'Veth kills an enemy, they leave behind Void Coral that she will consume. The first Coral increases her max Health by 50%, while further Coral heals her 20% max Health.<br><br>When a Void Coral is consumed, she deals 10% max Health as magic damage to enemies within 2 hexes."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Noxus",
-    "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by @BonusRatio*100@% for each different opponent that either you have conquered in combat or is dead.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br>",
-    "effects": [
+    "key": "Freljord",
+    "ingameKey": "Set9_Freljord",
+    "name": "Freljord",
+    "desc": "After 8 seconds, an ice storm strikes the battlefield. Enemies take a percentage of their max Health as true damage and gain debuffs.<br><br>Sunder: reduce Armor<br>Shred: reduce Magic Resist",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Freljord_normal_1685076708-Freljord-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Freljord_black_1685076708-Freljord-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Freljord_white_1685076289-Freljord-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "AD": 16,
-          "AP": 16,
-          "BonusRatio": 0.05000000074505806,
-          "Health": 160
-        }
+        "style": "gold",
+        "min": 2,
+        "max": 2
       },
       {
-        "maxUnits": 6,
-        "minUnits": 5,
-        "style": 3,
-        "variables": {
-          "AD": 30,
-          "AP": 30,
-          "BonusRatio": 0.05000000074505806,
-          "Health": 300
-        }
-      },
-      {
-        "maxUnits": 8,
-        "minUnits": 7,
-        "style": 4,
-        "variables": {
-          "AD": 42,
-          "AP": 42,
-          "BonusRatio": 0.05000000074505806,
-          "Health": 420
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 9,
-        "style": 5,
-        "variables": {
-          "AD": 75,
-          "AP": 75,
-          "BonusRatio": 0.05000000074505806,
-          "Health": 750
-        }
+        "style": "chromatic",
+        "min": 3
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_noxus.tft_set9.png",
-    "name": "Noxus"
+    "stats": {
+      "2": "8% health, enemies are 30% Sundered and Shredded for 10 seconds",
+      "3": "15% health, enemies are also stunned for 1.5 seconds"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Shurima",
-    "desc": "Every @PulsePeriod@ seconds, Shurimans heal @HealthRegen*100@% maximum Health. After @SecondsToAscend@ seconds, select Shurimans Ascend and gain @BonusHealthPercent*100@% maximum Health and @BonusASPercent*100@% Attack Speed.<br><br><row>(@MinUnits@) The strongest Shuriman Ascends</row><br><row>(@MinUnits@) All Shurimans Ascend. +@AscensionStrengthBoost*100@% Ascension bonus</row><br><row>(@MinUnits@) Instead, Ascend at combat start. +@AscensionStrengthBoost*100@% Ascension bonus</row><br><row>(@MinUnits@) Ascend twice, at combat start and after @SecondsToAscend@ seconds. +@AscensionStrengthBoost*100@% Ascension bonus</row>",
-    "effects": [
+    "key": "Ionia",
+    "ingameKey": "Set9_Ionia",
+    "name": "Ionia",
+    "desc": "Each Ionian has a unique bonus within their Ability.<br><br>Every 4 seconds, a number of Ionians are enlightened to their spirit form, gaining 20 mana and doubling stat bonuses for 4 seconds.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ionia_normal_1685076626-Ionia-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ionia_black_1685076627-Ionia-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ionia_white_1685076265-Ionia-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "AscensionStrengthBoost": "null",
-          "BonusASPercent": 0.30000001192092896,
-          "BonusHealthPercent": 0.20000000298023224,
-          "HealthRegen": 0.05000000074505806,
-          "PulsePeriod": 4,
-          "SecondsToAscend": 8,
-          "{e3dc0fc2}": 2
-        }
+        "style": "bronze",
+        "min": 3,
+        "max": 5
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "AscensionStrengthBoost": 0.20000000298023224,
-          "BonusASPercent": 0.30000001192092896,
-          "BonusHealthPercent": 0.20000000298023224,
-          "HealthRegen": 0.05000000074505806,
-          "PulsePeriod": 4,
-          "SecondsToAscend": 8,
-          "{e3dc0fc2}": 2
-        }
+        "style": "gold",
+        "min": 6,
+        "max": 8
       },
       {
-        "maxUnits": 8,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "AscensionStrengthBoost": 0.5,
-          "BonusASPercent": 0.30000001192092896,
-          "BonusHealthPercent": 0.20000000298023224,
-          "HealthRegen": 0.05000000074505806,
-          "PulsePeriod": 4,
-          "SecondsToAscend": 8,
-          "{e3dc0fc2}": 2
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 9,
-        "style": 5,
-        "variables": {
-          "AscensionStrengthBoost": 0.8999999761581421,
-          "BonusASPercent": 0.30000001192092896,
-          "BonusHealthPercent": 0.20000000298023224,
-          "HealthRegen": 0.05000000074505806,
-          "PulsePeriod": 4,
-          "SecondsToAscend": 8,
-          "{e3dc0fc2}": 2
-        }
+        "style": "chromatic",
+        "min": 9
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_shurima.tft_set9.png",
-    "name": "Shurima"
+    "stats": {
+      "3": "100% Ionian bonus, 1 enlightened",
+      "6": "200% Ionian bonus, 2 enlightened",
+      "9": "380% Ionian bonus, 4 enlightened"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Strategist",
-    "desc": "<spellPassive>Combat start:</spellPassive> Allies in the front 2 rows gain a Shield for @ShieldDuration@ seconds. Allies in the back 2 rows gain Ability Power.<br><br><expandRow>(@MinUnits@) @ShieldHP@ Shield; @BonusAP@ %i:scaleAP%</expandRow><br>",
-    "effects": [
-      {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusAP": 15,
-          "ShieldDuration": 15,
-          "ShieldHP": 250
-        }
-      },
-      {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 3,
-        "variables": {
-          "BonusAP": 25,
-          "ShieldDuration": 15,
-          "ShieldHP": 400
-        }
-      },
-      {
-        "maxUnits": 4,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "BonusAP": 35,
-          "ShieldDuration": 15,
-          "ShieldHP": 575
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 5,
-        "style": 4,
-        "variables": {
-          "BonusAP": 55,
-          "ShieldDuration": 15,
-          "ShieldHP": 850
-        }
-      }
-    ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_strategist.tft_set9.png",
-    "name": "Strategist"
-  },
-  {
-    "apiName": "Set9_Piltover",
-    "desc": "Gain the T-Hex. Every time you lose a player combat, the T-Hex gains Charges. Winning converts the Charges to Power for the T-Hex and grants you loot based on the number of Charges converted.<br><br><row>(@MinUnits@) Gain the T-Hex.</row><br><row>(@MinUnits@) Gain bonus loot every round. Each loss counts as 2 losses instead.</row>",
-    "effects": [
-      {
-        "maxUnits": 5,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "{7714a401}": "null",
-          "{af532c9d}": 1
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 5,
-        "variables": {
-          "{7714a401}": 1,
-          "{af532c9d}": 1
-        }
-      }
-    ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_piltover.tft_set9.png",
-    "name": "Piltover"
-  },
-  {
-    "apiName": "Set9_Multicaster",
-    "desc": "Multicasters cast their Ability multiple times. Bonus casts have @DamageReduction*100@% reduced effectiveness.<br><br><row>(@MinUnits@) @BonusCasts@ extra cast</row><br><row>(@MinUnits@) @BonusCasts@ extra casts</row>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusCasts": 1,
-          "DamageReduction": 0.550000011920929
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "BonusCasts": 2,
-          "DamageReduction": 0.550000011920929
-        }
-      }
-    ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_multicaster.tft_set9.png",
-    "name": "Multicaster"
-  },
-  {
-    "apiName": "Set9_Marksman",
-    "desc": "When Gunner champions attack, they gain bonus Attack Damage, up to @MaxStacks@ stacks.<br><br><expandRow>(@MinUnits@) @PercentAD@% %i:scaleAD% per stack</expandRow>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "MaxStacks": 8,
-          "PercentAD": 6
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "MaxStacks": 8,
-          "PercentAD": 12
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "MaxStacks": 8,
-          "PercentAD": 25
-        }
-      }
-    ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_gunner.tft_set9.png",
-    "name": "Gunner"
-  },
-  {
-    "apiName": "Set9_Empress",
-    "desc": "When Bel'Veth kills an enemy, they leave behind Void Coral that she will consume. The first Coral increases her maximum Health by @PercentBonusMaxHealth*100@%, while further Coral heals her @PercentHealthHeal*100@% maximum Health.<br><br>When a Void Coral is consumed, she deals @PercentHealthMagicDamage*100@% maximum Health as magic damage to enemies within @HexRange@ hexes.",
-    "effects": [
-      {
-        "maxUnits": 25000,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {
-          "HexRange": 2,
-          "PercentBonusMaxHealth": 0.5,
-          "PercentHealthHeal": 0.20000000298023224,
-          "PercentHealthMagicDamage": 0.10000000149011612
-        }
-      }
-    ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_empress.tft_set9.png",
-    "name": "Empress"
-  },
-  {
-    "apiName": "Set9_Ixtal",
+    "key": "Ixtal",
+    "ingameKey": "Set9_Ixtal",
+    "name": "Ixtal",
     "desc": "Gain elemental hexes, which give a different bonus from game to game.",
-    "effects": [
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ixtal_normal_1693031585-Ixtal-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ixtal_black_1693031585-Ixtal-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Ixtal_white_1693031585-Ixtal-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "ElectricStunDuration": 2,
-          "FireBurnPercent": 1,
-          "FireCapstoneBurnPercent": 2,
-          "FireCapstoneDamagePercent": 1.7000000476837158,
-          "FireDamagePercent": 1,
-          "FireDuration": 5,
-          "IceBlockDuration": 2,
-          "IceCapstoneHealthPercentDamage": 0.3499999940395355,
-          "IceHealPercent": 0.30000001192092896,
-          "IceHealthThreshold": 30,
-          "NumberOfHexes": 1,
-          "StoneBuffDuration": 8,
-          "StoneCapstoneHeal": 750,
-          "StoneDamageReduction": 0.20000000298023224,
-          "WindAS": 0.4000000059604645,
-          "WindBuffDuration": 4,
-          "WindCapstoneAS": 1,
-          "WindCapstoneBuffDuration": 5,
-          "WoodBonusHealth": 40,
-          "WoodBonusHealthHR": 40,
-          "WoodCapstoneStatGrowth": 10,
-          "WoodCapstoneTicRate": 2,
-          "WoodPercentHealth": 0.10000000149011612,
-          "{cca8485b}": 0.25,
-          "{dd25bb1b}": 2
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 2
       },
       {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "ElectricStunDuration": 2,
-          "FireBurnPercent": 1,
-          "FireCapstoneBurnPercent": 2,
-          "FireCapstoneDamagePercent": 1.7000000476837158,
-          "FireDamagePercent": 1,
-          "FireDuration": 5,
-          "IceBlockDuration": 2,
-          "IceCapstoneHealthPercentDamage": 0.3499999940395355,
-          "IceHealPercent": 0.30000001192092896,
-          "IceHealthThreshold": 30,
-          "NumberOfHexes": 2,
-          "StoneBuffDuration": 8,
-          "StoneCapstoneHeal": 750,
-          "StoneDamageReduction": 0.20000000298023224,
-          "WindAS": 0.4000000059604645,
-          "WindBuffDuration": 4,
-          "WindCapstoneAS": 1,
-          "WindCapstoneBuffDuration": 5,
-          "WoodBonusHealth": 40,
-          "WoodBonusHealthHR": 40,
-          "WoodCapstoneStatGrowth": 10,
-          "WoodCapstoneTicRate": 2,
-          "WoodPercentHealth": 0.10000000149011612,
-          "{cca8485b}": 0.25,
-          "{dd25bb1b}": 2
-        }
+        "style": "gold",
+        "min": 3,
+        "max": 3
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "ElectricStunDuration": 2,
-          "FireBurnPercent": 1,
-          "FireCapstoneBurnPercent": 2,
-          "FireCapstoneDamagePercent": 1.7000000476837158,
-          "FireDamagePercent": 1,
-          "FireDuration": 5,
-          "IceBlockDuration": 2,
-          "IceCapstoneHealthPercentDamage": 0.3499999940395355,
-          "IceHealPercent": 0.30000001192092896,
-          "IceHealthThreshold": 30,
-          "NumberOfHexes": 2,
-          "StoneBuffDuration": 8,
-          "StoneCapstoneHeal": 750,
-          "StoneDamageReduction": 0.20000000298023224,
-          "WindAS": 0.4000000059604645,
-          "WindBuffDuration": 4,
-          "WindCapstoneAS": 1,
-          "WindCapstoneBuffDuration": 5,
-          "WoodBonusHealth": 40,
-          "WoodBonusHealthHR": 40,
-          "WoodCapstoneStatGrowth": 10,
-          "WoodCapstoneTicRate": 2,
-          "WoodPercentHealth": 0.10000000149011612,
-          "{cca8485b}": 0.25,
-          "{dd25bb1b}": 2
-        }
+        "style": "chromatic",
+        "min": 4
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_ixtal.tft_set9_stage2.png",
-    "name": "Ixtal"
+    "stats": {
+      "2": "Create 1 hex",
+      "3": "Create 2 hexes.",
+      "4": "Something cool (Effect depends on current elemental)"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Freljord",
-    "desc": "After @DelayTime@ seconds, an ice storm strikes the battlefield. Enemies take a percentage of their max Health as true damage and gain debuffs.<br><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are @ShredSunder@% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword></row> for @Duration@ seconds<br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also <TFTKeyword>Stunned</TFTKeyword> for @StunDuration@ seconds</row><br><br><rules><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Shred</tftbold>: Reduce Magic Resist</rules>",
-    "effects": [
+    "key": "Gunner",
+    "ingameKey": "Set9_Marksman",
+    "name": "Gunner",
+    "desc": "When Gunner champions attack, they gain bonus Attack Damage, up to 8 stacks.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Gunner_normal_1685072585-Gunner-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Gunner_black_1685072586-Gunner-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Gunner_white_1685072586-Gunner-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "DelayTime": 8,
-          "Duration": 10,
-          "PercentHealthDamage": 8,
-          "ShredSunder": 30,
-          "{81ce23cf}": 1
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "DelayTime": 8,
-          "Duration": 10,
-          "PercentHealthDamage": 15,
-          "StunDuration": 1.5,
-          "{81ce23cf}": 2
-        }
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_freljord.tft_set9.png",
-    "name": "Freljord"
+    "stats": {
+      "2": "6% Attack Damage per attack",
+      "4": "12% Attack Damage per attack",
+      "6": "25% Attack Damage per attack"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9b_Bilgewater",
-    "desc": "Bilgerat attacks and Abilities mark enemies. The mark stores a percentage of damage dealt to the enemy by Bilgerats.<br><br>Marked enemies are struck by a cannonball after @BarrageInterval@ seconds, dealing the stored damage plus a flat value as <physicalDamage>physical damage</physicalDamage>.<br><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage> + @DamagePercent@% damage dealt</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage> + @DamagePercent@% damage dealt</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage> + @DamagePercent@% damage dealt</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage> + @DamagePercent@% damage dealt; nearby enemies take @SplashPercent@% of cannonball damage</row>",
-    "effects": [
+    "key": "Multicaster",
+    "ingameKey": "Set9_Multicaster",
+    "name": "Multicaster",
+    "desc": "Multicasters cast their Ability multiple times. Bonus casts have 55% reduced effectiveness.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Multicaster_normal_1685072510-Multicaster-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Multicaster_black_1685072510-Multicaster-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Multicaster_white_1685072510-Multicaster-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "BarrageInterval": 1.5,
-          "Damage": 100,
-          "DamagePercent": 33,
-          "SplashPercent": "null",
-          "{2aeb6df5}": 1
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 6,
-        "minUnits": 5,
-        "style": 3,
-        "variables": {
-          "BarrageInterval": 1.5,
-          "Damage": 150,
-          "DamagePercent": 55,
-          "SplashPercent": "null",
-          "{2aeb6df5}": 2
-        }
-      },
-      {
-        "maxUnits": 8,
-        "minUnits": 7,
-        "style": 4,
-        "variables": {
-          "BarrageInterval": 1.5,
-          "Damage": 325,
-          "DamagePercent": 70,
-          "SplashPercent": "null",
-          "{2aeb6df5}": 3
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 9,
-        "style": 5,
-        "variables": {
-          "BarrageInterval": 1.5,
-          "Damage": 800,
-          "DamagePercent": 135,
-          "SplashPercent": 50,
-          "{2aeb6df5}": 4
-        }
+        "style": "gold",
+        "min": 4
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_bilgewater.tft_set9_stage2.png",
-    "name": "Bilgewater"
+    "stats": {
+      "2": "1 extra cast",
+      "4": "2 extra casts"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Targon",
-    "desc": "All of your units' healing and shielding is improved.<br><br><expandRow>(@MinUnits@) @HealShieldIncrease*100@% increased healing and shielding </expandRow>",
-    "effects": [
+    "key": "Noxus",
+    "ingameKey": "Set9_Noxus",
+    "name": "Noxus",
+    "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by 5% for each different opponent that either you have conquered in combat or is dead.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Noxus_normal_1685076207-Noxus-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Noxus_black_1685076207-Noxus-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Noxus_white_1685076207-Noxus-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "HealShieldIncrease": 0.18000000715255737
-        }
+        "style": "bronze",
+        "min": 3,
+        "max": 4
       },
       {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "HealShieldIncrease": 0.3499999940395355
-        }
+        "style": "silver",
+        "min": 5,
+        "max": 6
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "HealShieldIncrease": 0.6000000238418579
-        }
+        "style": "gold",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_targon.tft_set9.png",
-    "name": "Targon"
+    "stats": {
+      "3": "160 Health, 16 Ability Power, 16% Attack Damage.",
+      "5": "300 Health, 30 Ability Power, 30% Attack Damage.",
+      "7": "420 Health, 42 Ability Power, 42% Attack Damage.",
+      "9": "750 Health, 75 Ability Power, 75% Attack Damage."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Wanderer",
-    "desc": "Ryze's ability changes depending on the Region Portal players voted for at the start of the game.",
-    "effects": [
+    "key": "Piltover",
+    "ingameKey": "Set9_Piltover",
+    "name": "Piltover",
+    "desc": "Gain the T-Hex. Every time you lose a player combat, the T-Hex gains Charges. Winning converts the Charges to Power for the T-Hex and grants you loot based on the number of Charges converted.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Piltover_normal_1685076745-Piltover-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Piltover_black_1685076745-Piltover-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Piltover_white_1685076745-Piltover-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 25000,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {}
+        "style": "gold",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_wanderer.tft_set9.png",
-    "name": "Wanderer"
+    "stats": {
+      "3": "Gain the T-Hex.",
+      "6": "Gain bonus loot every round. Each loss counts as 2 losses instead."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Zaun",
-    "desc": "Zaun champions create random chem-mods that only they can use. Champions can be modded once, and mods can be removed by benching or selling the champion.<br><br><row>(@MinUnits@) Gain 1 chem-mod</row><br><row>(@MinUnits@) Gain 2 chem-mods and Overcharge them</row><br><row>(@MinUnits@) Gain 5 chem-mods and Overcharge them</row><br>",
-    "effects": [
+    "key": "Invoker",
+    "ingameKey": "Set9_Preserver",
+    "name": "Invoker",
+    "desc": "Every 3 seconds, your units gain Mana.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Invoker_normal_1685072460-Invoker-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Invoker_black_1685072460-Invoker-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Invoker_white_1685072460-Invoker-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "{05b87026}": 1,
-          "{dbf68e4f}": "null"
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "{05b87026}": 2,
-          "{dbf68e4f}": 1
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "{05b87026}": 5,
-          "{dbf68e4f}": 1
-        }
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_zaun.tft_set9.png",
-    "name": "Zaun"
+    "stats": {
+      "2": "5 to all",
+      "4": "Additional 15 to Invokers",
+      "6": "15 to all, additional 15 to Invokers",
+      "8": "40 to all, and start with an additional 30 Ability Power"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9b_Vanquisher",
-    "desc": "Damage from Vanquisher Abilities can critically strike. Vanquishers gain bonus Critical Strike Chance and Critical Strike Damage.<br><br><expandRow>(@MinUnits@) @BaseCritChance@% %i:scaleCrit% , @CritDmg@% %i:scaleCritMult%</expandRow><br>",
-    "effects": [
+    "key": "ReaverKing",
+    "ingameKey": "Set9_ReaverKing",
+    "name": "Reaver King",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/ReaverKing_normal_1693031602-Reaver-King-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/ReaverKing_black_1693031602-Reaver-King-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/ReaverKing_white_1693031602-Reaver-King-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BaseCritChance": 15,
-          "CritDmg": 15
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "BaseCritChance": 35,
-          "CritDmg": 35
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BaseCritChance": 75,
-          "CritDmg": 55
-        }
+        "style": "gold",
+        "min": 1
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_vanquisher.tft_set9_stage2.png",
-    "name": "Vanquisher"
+    "stats": {
+      "1": "Gangplank uses his cutlass passive when placed in the front 2 rows and his pistol passive when placed in the back 2 rows."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Armorclad",
-    "desc": "Juggernaut champions take less damage as their Health decreases.<br><br><expandRow>(@MinUnits@) @MinDR*100@% to @MaxDR*100@% damage reduction</expandRow>",
-    "effects": [
+    "key": "Rogue",
+    "ingameKey": "Set9_Rogue",
+    "name": "Rogue",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Rogue_normal_1685072574-Rogue-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Rogue_black_1685072574-Rogue-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Rogue_white_1685072574-Rogue-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "Duration": 7,
-          "MaxDR": 0.25,
-          "MinDR": 0.15000000596046448
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "Duration": 7,
-          "MaxDR": 0.3499999940395355,
-          "MinDR": 0.20000000298023224
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "Duration": 7,
-          "MaxDR": 0.5,
-          "MinDR": 0.3499999940395355
-        }
+        "style": "gold",
+        "min": 4
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_juggernaut.tft_set9.png",
-    "name": "Juggernaut"
+    "stats": {
+      "2": "When a Rogue falls below 35% Health, they briefly become untargetable and dash to an enemy within 4 hexes (preferring enemy backline).",
+      "4": "Additionally, a Rogue's first attack on an enemy bleeds them for 60% of their max Health as magic damage over 2.5 seconds."
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Technogenius",
-    "desc": "Gain a placeable Apex Turret with 3 upgrade slots. Upgrades to the Apex Turret will show up in your shop for @GoldCost@ gold. The Apex Turret shares Heimerdinger's Attack Speed and Ability Power.<br><br><rules>You may only have 1 Apex Turret.</rules>",
-    "effects": [
+    "key": "Shurima",
+    "ingameKey": "Set9_Shurima",
+    "name": "Shurima",
+    "desc": "Every 4 seconds, Shurimans heal 5% maximum Health. After 8 seconds, select Shurimans Ascend and gain 20% maximum Health and 30% Attack Speed.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Shurima_normal_1685076576-Shurima-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Shurima_black_1685076577-Shurima-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Shurima_white_1685076256-Shurima-white.svg",
+    "type": "ORIGIN",
+    "styles": [
       {
-        "maxUnits": 25000,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {
-          "GoldCost": 6,
-          "{8063e2fe}": 1,
-          "{db5e6ace}": 100
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "style": "chromatic",
+        "min": 9
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_technogenius.tft_set9.png",
-    "name": "Technogenius"
+    "stats": {
+      "2": "The strongest Shuriman Ascends",
+      "4": "All Shurimans Ascend. +20% Ascension bonus",
+      "6": "Instead, Ascend at combat start. +50% Ascension bonus",
+      "9": "Ascend twice, at combat start and after 8 seconds. +90% Ascension bonus"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Challenger",
-    "desc": "Challengers gain bonus Attack Speed. When their target dies, Challengers dash to a new target and increase their Attack Speed bonus by @IncreasePct*100@% for @BurstDuration@ seconds.<br><br><expandRow>(@MinUnits@) @BonusAS@% %i:scaleAS%</expandRow>",
-    "effects": [
+    "key": "Slayer",
+    "ingameKey": "Set9_Slayer",
+    "name": "Slayer",
+    "desc": "Slayers gain 12% Omnivamp.<br><br>Slayers deal bonus damage, doubled against units below 66% Health.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Slayer_normal_1685072764-Slayer-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Slayer_black_1685072764-Slayer-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Slayer_white_1685072764-Slayer-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "BonusAS": 30,
-          "BurstDuration": 2.5,
-          "IncreasePct": 0.5
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "BonusAS": 60,
-          "BurstDuration": 2.5,
-          "IncreasePct": 0.5
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
       },
       {
-        "maxUnits": 7,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "BonusAS": 95,
-          "BurstDuration": 2.5,
-          "IncreasePct": 0.5
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 8,
-        "style": 4,
-        "variables": {
-          "BonusAS": 140,
-          "BurstDuration": 2.5,
-          "IncreasePct": 0.5
-        }
+        "style": "gold",
+        "min": 6
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_6_challenger.png",
-    "name": "Challenger"
+    "stats": {
+      "2": "+6% bonus damage",
+      "4": "+20% bonus damage",
+      "6": "+40% bonus damage"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9b_Darkin",
-    "desc": "<row>(@MinUnits@) Darkin are possessed by a weapon. When they die, the weapon possesses the nearest ally champion, granting them the weapon's power.</row><br><row>(@MinUnits@) Weapon powers become @WeaponEffectBonus*100@% stronger</row><br><br><rules>Weapon powers are described in each Darkin's Ability tooltip.</rules>",
-    "effects": [
+    "key": "Sorcerer",
+    "ingameKey": "Set9_Sorcerer",
+    "name": "Sorcerer",
+    "desc": "Sorcerers gain bonus Ability Power.<br><br>When an enemy dies after being damaged by a Sorcerer, they deal a percentage of that enemy's maximum Health to another enemy.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Sorcerer_normal_1685072549-sorcerer-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Sorcerer_black_1685072549-sorcerer-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Sorcerer_white_1685072549-sorcerer-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 1,
-        "minUnits": 1,
-        "style": 1,
-        "variables": {
-          "WeaponEffectBonus": "null"
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 3
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 2,
-        "style": 4,
-        "variables": {
-          "WeaponEffectBonus": 0.5
-        }
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_darkin.tft_set9.png",
-    "name": "Darkin"
+    "stats": {
+      "2": "25 Ability Power; 7% max",
+      "4": "50 Ability Power; 10% max",
+      "6": "80 Ability Power; 12% max to 2 enemies",
+      "8": "120 Ability Power; 15% max to 2 enemies"
+    },
+    "isHidden": false
   },
   {
-    "apiName": "Set9_Ionia",
-    "desc": "Each Ionian has a unique bonus within their Ability. <br><br>Every @SpiritDuration@ seconds, a number of Ionians are enlightened to their spirit form, gaining @Mana@ mana and doubling stat bonuses for @SpiritDuration@ seconds.<br><br><expandRow>(@MinUnits@) @TooltipBonus*100@% Ionian bonus, @NumberOfSpirits@ enlightened</expandRow>",
-    "effects": [
+    "key": "Strategist",
+    "ingameKey": "Set9_Strategist",
+    "name": "Strategist",
+    "desc": "Combat Start: Allies in the front 2 rows gain a shield for 15 seconds and allies in the back 2 rows gain Ability Power.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Strategist_normal_1685072610-Strategist-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Strategist_black_1685072610-Strategist-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Strategist_white_1685072610-Strategist-white.svg",
+    "type": "CLASS",
+    "styles": [
       {
-        "maxUnits": 5,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "EmblemBonus": 33,
-          "Mana": 20,
-          "NumberOfSpirits": 1,
-          "SpiritDuration": 4,
-          "TooltipBonus": 1,
-          "{18bfc1ac}": 8,
-          "{1b8cd16a}": 25,
-          "{27b17444}": 25,
-          "{3fc62f6f}": 2,
-          "{4df03474}": 200,
-          "{53912082}": 1,
-          "{7d34708f}": 5,
-          "{b9a6ee1b}": 15,
-          "{eb0c521b}": 15,
-          "{ed124bdb}": 25,
-          "{f6b4b588}": 3
-        }
+        "style": "bronze",
+        "min": 2,
+        "max": 2
       },
       {
-        "maxUnits": 8,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "EmblemBonus": 66,
-          "Mana": 20,
-          "NumberOfSpirits": 2,
-          "SpiritDuration": 4,
-          "TooltipBonus": 2,
-          "{18bfc1ac}": 16,
-          "{1b8cd16a}": 40,
-          "{27b17444}": 50,
-          "{3fc62f6f}": 2,
-          "{4df03474}": 400,
-          "{53912082}": 1,
-          "{7d34708f}": 10,
-          "{b9a6ee1b}": 30,
-          "{eb0c521b}": 30,
-          "{ed124bdb}": 50,
-          "{f6b4b588}": 6
-        }
+        "style": "silver",
+        "min": 3,
+        "max": 3
       },
       {
-        "maxUnits": 25000,
-        "minUnits": 9,
-        "style": 5,
-        "variables": {
-          "EmblemBonus": 125.4000015258789,
-          "Mana": 20,
-          "NumberOfSpirits": 4,
-          "SpiritDuration": 4,
-          "TooltipBonus": 3.799999952316284,
-          "{18bfc1ac}": 34.20000076293945,
-          "{1b8cd16a}": 76,
-          "{27b17444}": 95,
-          "{3fc62f6f}": 2,
-          "{4df03474}": 760,
-          "{53912082}": 1,
-          "{7d34708f}": 19,
-          "{b9a6ee1b}": 57,
-          "{eb0c521b}": 57,
-          "{ed124bdb}": 95,
-          "{f6b4b588}": 11.399999618530273
-        }
+        "style": "gold",
+        "min": 4,
+        "max": 4
+      },
+      {
+        "style": "chromatic",
+        "min": 5
       }
     ],
-    "icon": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_9_ionia.tft_set9.png",
-    "name": "Ionia"
+    "stats": {
+      "2": "250 shield; 15 Ability Power",
+      "3": "400 shield; 25 Ability Power",
+      "4": "575 shield; 35 Ability Power",
+      "5": "850 shield; 55 Ability Power"
+    },
+    "isHidden": false
+  },
+  {
+    "key": "Targon",
+    "ingameKey": "Set9_Targon",
+    "name": "Targon",
+    "desc": "All of your units' healing and shielding is improved.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Targon_normal_1685076684-Targon-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Targon_black_1685076684-Targon-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Targon_white_1685076280-Targon-white.svg",
+    "type": "ORIGIN",
+    "styles": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "style": "gold",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "style": "chromatic",
+        "min": 4
+      }
+    ],
+    "stats": {
+      "2": "18% increased healing and shielding",
+      "3": "35% increased healing and shielding",
+      "4": "60% increased healing and shielding"
+    },
+    "isHidden": false
+  },
+  {
+    "key": "Technogenius",
+    "ingameKey": "Set9_Technogenius",
+    "name": "Technogenius",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Technogenius_normal_1685072629-Technogenius-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Technogenius_black_1685072629-Technogenius-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Technogenius_white_1685072629-Technogenius-white.svg",
+    "type": "CLASS",
+    "styles": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ],
+    "stats": {
+      "1": "Gain a placeable Apex Turret with 3 upgrade slots. Upgrades to the Apex Turret will show up in your shop for 6 gold. The Apex Turret shares Heimerdinger's Attack Speed and Ability Power.<br><br>You may only have 1 Apex Turret."
+    },
+    "isHidden": false
+  },
+  {
+    "key": "Void",
+    "ingameKey": "Set9_Void",
+    "name": "Void",
+    "desc": "Get a placeable void egg. At the start of combat, it hatches into an unspeakable horror and knocks up adjacent enemies.<br><br>Each Void star level increases the horror's Health and Ability Power by 25%.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Void_normal_1685076077-Void-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Void_black_1685076077-Void-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Void_white_1685076093-Void-white.svg",
+    "type": "ORIGIN",
+    "styles": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6,
+        "max": 7
+      },
+      {
+        "style": "chromatic",
+        "min": 8
+      }
+    ],
+    "stats": {
+      "3": "Void Remora",
+      "6": "Rift Herald",
+      "8": "Baron Nashor"
+    },
+    "isHidden": false
+  },
+  {
+    "key": "Wanderer",
+    "ingameKey": "Set9_Wanderer",
+    "name": "Wanderer",
+    "desc": "",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Wanderer_normal_1685076541-Wanderer-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Wanderer_black_1685076541-Wanderer-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Wanderer_white_1685076541-Wanderer-white.svg",
+    "type": "ORIGIN",
+    "styles": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ],
+    "stats": {
+      "1": "Ryze's spell changes depending on the Region Portal players voted for at the start of the game."
+    },
+    "isHidden": false
+  },
+  {
+    "key": "Zaun",
+    "ingameKey": "Set9_Zaun",
+    "name": "Zaun",
+    "desc": "Zaun champions create random chem-mods that only they can use. Champions can be modded once, and mods can be removed by benching or selling the champion.",
+    "imageUrl": "https://cdn.lolchess.gg/upload/images/traits/Zaun_normal_1685076666-Zaun-gray.svg",
+    "blackImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Zaun_black_1685076659-Zaun-black.svg",
+    "whiteImageUrl": "https://cdn.lolchess.gg/upload/images/traits/Zaun_white_1685076275-Zaun-white.svg",
+    "type": "ORIGIN",
+    "styles": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "chromatic",
+        "min": 6
+      }
+    ],
+    "stats": {
+      "2": "Gain 1 chem-mod",
+      "4": "Gain 2 chem-mods and Overcharge them",
+      "6": "Gain 5 chem-mods and Overcharge them"
+    },
+    "isHidden": false
   }
 ]

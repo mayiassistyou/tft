@@ -8,66 +8,73 @@ import Input from "../input";
 import Table, { TData, THead, TRow } from "../table";
 import { CombinesItemType, ItemType } from "@/types/item.type";
 import getCombinesItems from "@/utils/getCombinesItems";
-import generateItemDesc from "@/utils/generateItemDesc";
 import CharacterHeader from "../character-header";
 
 type ItemProps = {
-  components: ItemType[];
-  items: ItemType[];
+  baseItems: ItemType[];
+  combineItems: ItemType[];
 };
 
-export default function Item({ components, items }: ItemProps): JSX.Element {
+export default function Item({
+  baseItems,
+  combineItems,
+}: ItemProps): JSX.Element {
   const initialCombinesItem = getCombinesItems(
-    components,
-    items,
-    components[0],
+    baseItems,
+    combineItems,
+    baseItems[0],
   );
 
-  const [selectedItemApiName, setSelectedItemApiName] = useState<string>(
-    components[0].apiName,
+  const [selectedItemKey, setSelectedItemKey] = useState<string>(
+    baseItems[0].key,
   );
-  const [selectedItem, setSelectedItem] = useState<ItemType>(components[0]);
+  const [selectedItem, setSelectedItem] = useState<ItemType>(baseItems[0]);
   const [combinesItems, setCombinesItems] =
     useState<CombinesItemType[]>(initialCombinesItem);
-  const [searchedComponents, setSearchedComponents] =
-    useState<ItemType[]>(components);
-  const [searchedItems, setSearchedItems] = useState<ItemType[]>(items);
+  const [searchedBaseItems, setSearchedBaseItems] =
+    useState<ItemType[]>(baseItems);
+  const [searchedCombineItems, setSearchedCombineItems] =
+    useState<ItemType[]>(combineItems);
 
   useEffect(() => {
-    const selectedItem = [...components, ...items].find(
-      (item) => item.apiName === selectedItemApiName,
+    const selectedItem = [...baseItems, ...combineItems].find(
+      (item) => item.key === selectedItemKey,
     );
 
     if (selectedItem) {
       setSelectedItem(selectedItem);
 
-      const newCombinesItem = getCombinesItems(components, items, selectedItem);
+      const newCombinesItem = getCombinesItems(
+        baseItems,
+        combineItems,
+        selectedItem,
+      );
       setCombinesItems(newCombinesItem);
     }
-  }, [selectedItemApiName, components, items]);
+  }, [selectedItemKey, baseItems, combineItems]);
 
-  function handleItemClick(apiName: string) {
-    if (!apiName || apiName === selectedItemApiName) return;
-    setSelectedItemApiName(apiName);
+  function handleItemClick(key: string) {
+    if (!key || key === selectedItemKey) return;
+    setSelectedItemKey(key);
   }
 
   function handleInputChange(value: string) {
-    const searchedComponents = components.filter((component) =>
-      component.apiName
+    const searchedBaseItems = baseItems.filter((baseItem) =>
+      baseItem.key
         .trim()
         .toLowerCase()
         .includes(value.trim().toLocaleLowerCase()),
     );
 
-    const searchedItems = items.filter((item) =>
-      item.apiName
+    const searchedCombineItems = combineItems.filter((baseItem) =>
+      baseItem.key
         .trim()
         .toLowerCase()
         .includes(value.trim().toLocaleLowerCase()),
     );
 
-    setSearchedComponents(searchedComponents);
-    setSearchedItems(searchedItems);
+    setSearchedBaseItems(searchedBaseItems);
+    setSearchedCombineItems(searchedCombineItems);
   }
 
   return (
@@ -84,30 +91,30 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
 
         <CharacterHeader label="Base Items" />
         <div className="grid grid-cols-6 gap-2 mb-6">
-          {searchedComponents.map((component: ItemType) => (
+          {searchedBaseItems.map((item: ItemType) => (
             <ItemBox
-              key={component.apiName}
-              item={component}
-              selectedItemApiName={selectedItemApiName}
+              key={item.key}
+              item={item}
+              selectedItemKey={selectedItemKey}
               handleItemClick={handleItemClick}
               hasOpacity
-              components={components}
-              items={items}
+              baseItems={baseItems}
+              combineItems={combineItems}
             />
           ))}
         </div>
 
         <CharacterHeader label="Combined Items" />
         <div className="grid grid-cols-6 gap-2">
-          {searchedItems.map((item: ItemType) => (
+          {searchedCombineItems.map((item: ItemType) => (
             <ItemBox
-              key={item.apiName}
+              key={item.key}
               item={item}
-              selectedItemApiName={selectedItemApiName}
+              selectedItemKey={selectedItemKey}
               handleItemClick={handleItemClick}
               hasOpacity
-              components={components}
-              items={items}
+              baseItems={baseItems}
+              combineItems={combineItems}
             />
           ))}
         </div>
@@ -123,9 +130,8 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
 
         <div className="flex items-center mb-6">
           <Image
-            src={selectedItem.icon}
+            src={selectedItem.imageUrl}
             alt={selectedItem.name}
-            unoptimized
             width={30}
             height={30}
             className="border border-cyan-800 mr-4"
@@ -149,38 +155,38 @@ export default function Item({ components, items }: ItemProps): JSX.Element {
           </THead>
 
           <tbody>
-            {combinesItems.map((combinesItem, index) => (
+            {combinesItems.map((combineItem, index) => (
               <TRow key={index}>
                 <TData>
                   <div className="flex items-center gap-2">
                     <ItemBox
-                      item={combinesItem.recipes[0]}
+                      item={combineItem.recipes[0]}
                       handleItemClick={handleItemClick}
                       size={35}
-                      components={components}
-                      items={items}
+                      baseItems={baseItems}
+                      combineItems={combineItems}
                     />
                     <ItemBox
-                      item={combinesItem.recipes[1]}
+                      item={combineItem.recipes[1]}
                       handleItemClick={handleItemClick}
                       size={35}
-                      components={components}
-                      items={items}
+                      baseItems={baseItems}
+                      combineItems={combineItems}
                     />
                   </div>
                 </TData>
                 <TData>
                   <div className="flex items-center gap-4">
                     <ItemBox
-                      item={combinesItem.combine}
+                      item={combineItem.combine}
                       handleItemClick={handleItemClick}
                       size={35}
-                      components={components}
-                      items={items}
+                      baseItems={baseItems}
+                      combineItems={combineItems}
                     />
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: generateItemDesc(combinesItem.combine),
+                        __html: combineItem.combine.desc,
                       }}
                     />
                   </div>

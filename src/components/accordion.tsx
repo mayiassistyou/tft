@@ -29,7 +29,7 @@ export default function Accordion({
           }`}
         ></div>
         <span
-          className={`flex-grow py-1 font-lg font-semibold transition-all
+          className={`flex-grow py-1 text-lg font-semibold transition-all
           duration-300 ${isExpanded ? "pl-4 text-white" : "pl-0"}`}
         >
           {title}

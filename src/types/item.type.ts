@@ -1,36 +1,24 @@
-export type EffectsType = {
-  AD?: number;
-  ADandAPPerTick?: number;
-  Amour?: number;
-  AP?: number;
-  AS?: number;
-  BaseAmp?: number;
-  BonusAmp?: number;
-  BonusAttackSpeed?: number;
-  CritChance?: number;
-  Duration?: number;
-  HealTickRate?: number;
-  HexRangeIncrease?: number;
-  HealingPercentPerTickPerStage?: number;
-  Health?: number;
-  Mana?: number;
-  MagicResist?: number;
-  PercentMaxHealthDamage?: number;
-  PercentDamageIncrease?: number;
-  ProcADPercent?: number;
-};
-
 export type ItemType = {
-  apiName: string;
-  accociatedTraits: string[];
-  composition: string[];
-  desc: string;
-  effects: EffectsType;
-  from: any;
-  icon: string;
-  incomtableTraits: [];
+  key: string;
+  ingameKey: string;
   name: string;
-  unique: boolean;
+  desc: string;
+  fromDesc: string;
+  imageUrl: string;
+  compositions?: string[];
+  isHidden: boolean;
+  isFilterHidden: boolean;
+  isFromItem: boolean;
+  isUnique: boolean;
+  isPbe: boolean;
+  isNormal: boolean;
+  isArtifact: boolean;
+  isEmblem: boolean;
+  isShimmerscale: boolean;
+  isGadgeteen: boolean;
+  isZaun: boolean;
+  isTurret: boolean;
+  isNew: boolean;
 };
 
 export type CombinesItemType = {

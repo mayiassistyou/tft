@@ -42,9 +42,10 @@ export default function Header(): JSX.Element {
             <Image
               src="/images/duckbill.png"
               alt="Duckbill"
-              unoptimized
-              height={32}
-              width={32}
+              width={0}
+              height={0}
+              sizes="32px"
+              className="w-full h-auto"
             />
             <span className="text-3xl font-bold text-white ml-1">tft</span>
           </div>

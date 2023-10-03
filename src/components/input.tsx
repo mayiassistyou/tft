@@ -29,7 +29,7 @@ export default function Input(props: Props): JSX.Element {
     } else {
       setIsShowRemoveIcon(false);
     }
-  }, [inputValue]);
+  }, [inputValue, handleInputChange]);
 
   return (
     <div

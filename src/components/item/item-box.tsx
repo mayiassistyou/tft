@@ -1,30 +1,29 @@
-import { CombinesItemType, ItemType } from "@/types/item.type";
+import { ItemType } from "@/types/item.type";
 import Image from "next/image";
 import Tooltip from "../tooltip";
-import generateItemDesc from "@/utils/generateItemDesc";
 import getCombinesItems from "@/utils/getCombinesItems";
 
 type Props = {
   item: ItemType;
-  selectedItemApiName?: string;
-  handleItemClick: (apiName: string) => void;
+  selectedItemKey?: string;
+  handleItemClick: (key: string) => void;
   size?: number;
   hasOpacity?: boolean;
-  components: ItemType[];
-  items: ItemType[];
+  baseItems: ItemType[];
+  combineItems: ItemType[];
 };
 
 export default function ItemBox(props: Props): JSX.Element {
   const {
     item,
-    selectedItemApiName,
+    selectedItemKey,
     handleItemClick,
     size = 40,
     hasOpacity = false,
-    components,
-    items,
+    baseItems,
+    combineItems,
   } = props;
-  const isSelected = selectedItemApiName === item.apiName;
+  const isSelected = selectedItemKey === item.key;
   let classNames = "border-cyan-900";
 
   if (isSelected) {
@@ -34,24 +33,25 @@ export default function ItemBox(props: Props): JSX.Element {
   }
 
   function ItemBoxDetail(): JSX.Element {
-    const combinesItems = getCombinesItems(components, items, item);
-    const isComponentItem = item.composition.length === 0;
+    const combinesItems = getCombinesItems(baseItems, combineItems, item);
 
-    const intoOrRecipeItems = isComponentItem
+    const intoOrRecipeItems = item.compositions
       ? combinesItems
-          ?.filter((i: any) => i.recipes[0]?.apiName === item.apiName)
-          .map((combine: any) => combine.combine.icon)
+          ?.find((i: any) => i.combine.key === item.key)
+          ?.recipes?.map((recipe: any) => recipe.imageUrl)
       : combinesItems
-          ?.find((i: any) => i.combine.apiName === item.apiName)
-          ?.recipes?.map((recipe: any) => recipe?.icon);
+          ?.filter((i: any) => i.recipes[0]?.key === item.key)
+          .map((combine: any) => combine.combine.imageUrl);
 
     return (
-      <>
-        <div className="flex gap-2 w-full border-b border-cyan-900 px-6 py-4 mb-2">
+      <div className="w-full">
+        <div
+          className="flex gap-2 border-b border-cyan-900 px-6 py-4
+          mb-2"
+        >
           <Image
-            src={item.icon}
+            src={item.imageUrl}
             alt={item.name}
-            unoptimized
             width={size}
             height={size}
           />
@@ -64,27 +64,20 @@ export default function ItemBox(props: Props): JSX.Element {
 
         <div
           dangerouslySetInnerHTML={{
-            __html: generateItemDesc(item),
+            __html: item.desc,
           }}
           className="text-white border-b border-cyan-900 px-4 py-2 mb-2"
         />
 
         <div className="flex items-center gap-2 p-2">
-          <span>{isComponentItem ? "Into:" : "Recipe:"}</span>
-          <div className="flex gap-2">
+          <span>{item.compositions ? "Into:" : "Recipe:"}</span>
+          <div className="flex justify-between gap-2">
             {intoOrRecipeItems?.map((i: any, index: number) => (
-              <Image
-                key={index}
-                src={i}
-                alt={i}
-                unoptimized
-                width={20}
-                height={20}
-              />
+              <Image key={index} src={i} alt={i} width={20} height={20} />
             ))}
           </div>
         </div>
-      </>
+      </div>
     );
   }
 
@@ -95,12 +88,11 @@ export default function ItemBox(props: Props): JSX.Element {
           className={`w-10 h-10 border hover:border-amber-600
             hover:opacity-100 cursor-pointer
             ${classNames}`}
-          onClick={() => handleItemClick(item.apiName)}
+          onClick={() => handleItemClick(item.key)}
         >
           <Image
-            src={item.icon}
+            src={item.imageUrl}
             alt={item.name}
-            unoptimized
             width={size}
             height={size}
           />

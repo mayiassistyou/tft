@@ -3,6 +3,7 @@ import { TraitType } from "@/types/trait.type";
 import Image from "next/image";
 import Link from "next/link";
 import Tooltip from "../tooltip";
+import { ChampionType } from "@/types/champion.type";
 
 type Props = {
   champion: ChampionType;
@@ -30,9 +31,8 @@ export default function ChampionBox({
       <div className="flex justify-between items-stretch gap-2 h-full">
         <div className="flex flex-col items-center self-center gap-1 py-2 pl-2">
           <Image
-            src={champion.tileIcon}
+            src={champion.imageUrl}
             alt={champion.name}
-            unoptimized
             width={50}
             height={50}
             className="border border-cyan-900"
@@ -48,9 +48,8 @@ export default function ChampionBox({
           {championTraits.map((trait) => (
             <div key={trait.name} className="flex items-center gap-2">
               <Image
-                src={trait.icon}
+                src={trait.imageUrl}
                 alt={trait.name}
-                unoptimized
                 width={25}
                 height={25}
                 className="py-1 opacity-80"
@@ -61,7 +60,7 @@ export default function ChampionBox({
         </div>
         <div className="self-center flex items-center gap-1 pr-2">
           <GiTwoCoins />
-          <span className="font-semibold">{champion.cost}</span>
+          <span className="font-semibold">{champion.cost[0]}</span>
         </div>
       </div>
     );
@@ -69,19 +68,18 @@ export default function ChampionBox({
 
   return (
     <Tooltip content={<ChampionMoreInfo />}>
-      <Link href={`/champions/${champion.slug}`}>
+      <Link href={`/champions/${champion.key.toLowerCase()}`}>
         <div
           className="group flex flex-col gap-2 items-center cursor-pointer
           opacity-80"
         >
           <Image
-            src={champion.tileIcon}
+            src={champion.imageUrl}
             alt={champion.name}
-            unoptimized
             width={size}
             height={size}
             className={`border border-${
-              colorByCost[champion.cost as keyof typeof colorByCost]
+              colorByCost[champion.cost[0] as keyof typeof colorByCost]
             } group-hover:border-amber-600`}
           />
           {hideName ? null : (

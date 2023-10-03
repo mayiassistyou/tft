@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import Input from "../input";
 import Image from "next/image";
 import Button from "../button";
+import { ChampionType } from "@/types/champion.type";
 
 type FilterProps = {
   handleFiltersChange: (filters: string[]) => void;
@@ -95,12 +96,11 @@ function TraitFilter({
     <>
       {traits.map((trait) => (
         <Checkbox
-          key={trait.apiName}
+          key={trait.key}
           icon={
             <Image
-              src={trait.icon}
-              alt={trait.apiName}
-              unoptimized
+              src={trait.imageUrl}
+              alt={trait.key}
               height={24}
               width={24}
             />
@@ -145,7 +145,7 @@ export default function Champion({ champions, traits }: Props): JSX.Element {
     const newChampions = [...champions].filter((champion) => {
       if (
         costFilters.length > 0 &&
-        !costFilters.includes(champion.cost.toString())
+        !costFilters.includes(champion.cost[0].toString())
       ) {
         return false;
       }
@@ -204,14 +204,29 @@ export default function Champion({ champions, traits }: Props): JSX.Element {
         />
 
         <Accordion
-          title="Trait"
+          title="Origin"
           content={
             <TraitFilter
+              key={0}
               handleFiltersChange={(filters: string[]) =>
                 setTraitFilters(filters)
               }
               filters={traitFilters}
-              traits={traits}
+              traits={traits.filter((trait) => trait.type === "ORIGIN")}
+            />
+          }
+        />
+
+        <Accordion
+          title="Class"
+          content={
+            <TraitFilter
+              key={1}
+              handleFiltersChange={(filters: string[]) =>
+                setTraitFilters(filters)
+              }
+              filters={traitFilters}
+              traits={traits.filter((trait) => trait.type === "CLASS")}
             />
           }
         />
@@ -232,12 +247,15 @@ export default function Champion({ champions, traits }: Props): JSX.Element {
 
         {[...traitFilters, ...costFilters].length > 0 ? (
           <div className="grid grid-cols-5 gap-2 my-6 p-2">
-            {[...traitFilters, ...costFilters].map((costFilter) => (
+            {[...traitFilters, ...costFilters].map((filter) => (
               <FilterBadge
-                key={costFilter}
-                label={costFilter}
+                key={filter}
+                label={filter}
                 handleClick={(value: string) => {
                   setCostFilters((prevState) =>
+                    [...prevState].filter((item) => item !== value),
+                  );
+                  setTraitFilters((prevState) =>
                     [...prevState].filter((item) => item !== value),
                   );
                 }}
@@ -249,12 +267,12 @@ export default function Champion({ champions, traits }: Props): JSX.Element {
         <div className="grid grid-cols-8 gap-4">
           {filteredChampions.map((champion) => {
             const championTraits = champion.traits.map((championTrait) =>
-              traits.find((t) => t.name === championTrait),
+              traits.find((t) => t.key === championTrait),
             ) as TraitType[];
 
             return (
               <ChampionBox
-                key={champion.apiName}
+                key={champion.key}
                 champion={champion}
                 championTraits={championTraits}
               />

@@ -1,36 +1,32 @@
-type AbilityType = {
+export type SkillType = {
+  name: string;
+  imageUrl: string;
   desc: string;
-  icon: string;
-  name: string;
-  variables: {
-    name: string;
-    value: number[];
-  }[];
+  startingMana: number;
+  skillMana: number;
+  stats: string[];
 };
 
-type StatsType = {
-  armor: number;
-  attackSpeed: number;
-  critChance: number;
-  critMultiplier: number;
-  damage: number;
-  hp: number;
-  initialMana: number;
-  magicResist: number;
-  mana: number;
-  range: number;
-};
-
-type ChampionType = {
-  ability: AbilityType;
-  apiName: string;
-  characterName: string;
-  cost: number;
-  icon: string;
+export type ChampionType = {
+  key: string;
+  ingameKey: string;
   name: string;
-  squareIcon: string;
-  stats: StatsType;
-  tileIcon: string;
+  imageUrl: string;
   traits: string[];
-  slug: string;
+  isHidden: boolean;
+  isHiddenGuide: boolean;
+  isHiddenLanding: boolean;
+  isHiddenTeamBuilder: boolean;
+  isPbe: boolean;
+  isRyze: boolean;
+  cost: number[];
+  health: number[];
+  attackDamage: number[];
+  damagePerSecond: number[];
+  attackRange: number;
+  attackSpeed: number;
+  armor: number;
+  magicalResistance: number;
+  skill: SkillType;
+  recommendItems: string[];
 };
