@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Container from "./container";
-import Image from "next/image";
 
 type NavItemProps = {
   label: string;
@@ -57,6 +57,7 @@ export default function Header(): JSX.Element {
         <NavItem label="Champions" url="/champions" pathname={pathname} />
         <NavItem label="Tier List" url="/tier-list" pathname={pathname} />
         <NavItem label="Item Builder" url="/items" pathname={pathname} />
+        <NavItem label="Team builder" url="/team-builder" pathname={pathname} />
       </div>
     </>
   );

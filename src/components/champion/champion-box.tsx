@@ -10,6 +10,8 @@ type Props = {
   championTraits: TraitType[];
   size?: number;
   hideName?: boolean;
+  isLink?: boolean;
+  tooltipPlacement?: "top" | "right";
 };
 
 export default function ChampionBox({
@@ -17,6 +19,8 @@ export default function ChampionBox({
   championTraits,
   size = 55,
   hideName = false,
+  isLink = true,
+  tooltipPlacement,
 }: Props): JSX.Element {
   const colorByCost = {
     1: "gray-500",
@@ -67,28 +71,52 @@ export default function ChampionBox({
   }
 
   return (
-    <Tooltip content={<ChampionMoreInfo />}>
-      <Link href={`/champions/${champion.key.toLowerCase()}`}>
-        <div
-          className="group flex flex-col gap-2 items-center cursor-pointer
+    <Tooltip content={<ChampionMoreInfo />} placement={tooltipPlacement}>
+      {isLink ? (
+        <Link href={`/champions/${champion.key.toLowerCase()}`}>
+          <div
+            className="group flex flex-col gap-2 items-center cursor-pointer
           opacity-80"
-        >
-          <Image
-            src={champion.imageUrl}
-            alt={champion.name}
-            width={size}
-            height={size}
-            className={`border border-${
-              colorByCost[champion.cost[0] as keyof typeof colorByCost]
-            } group-hover:border-amber-600`}
-          />
-          {hideName ? null : (
-            <p className="group-hover:text-white text-center text-sm">
-              {champion.name}
-            </p>
-          )}
-        </div>
-      </Link>
+          >
+            <Image
+              src={champion.imageUrl}
+              alt={champion.name}
+              width={size}
+              height={size}
+              className={`border border-${
+                colorByCost[champion.cost[0] as keyof typeof colorByCost]
+              } group-hover:border-amber-600`}
+            />
+            {hideName ? null : (
+              <p className="group-hover:text-white text-center text-sm">
+                {champion.name}
+              </p>
+            )}
+          </div>
+        </Link>
+      ) : (
+        <button>
+          <div
+            className="group flex flex-col gap-2 items-center cursor-pointer
+          opacity-80"
+          >
+            <Image
+              src={champion.imageUrl}
+              alt={champion.name}
+              width={size}
+              height={size}
+              className={`border border-${
+                colorByCost[champion.cost[0] as keyof typeof colorByCost]
+              } group-hover:border-amber-600`}
+            />
+            {hideName ? null : (
+              <p className="group-hover:text-white text-center text-sm">
+                {champion.name}
+              </p>
+            )}
+          </div>
+        </button>
+      )}
     </Tooltip>
   );
 }
