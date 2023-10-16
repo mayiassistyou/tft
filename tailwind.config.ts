@@ -16,6 +16,22 @@ const config: Config = {
       gridTemplateRows: {
         "8": "repeat(8, minmax(0, 1fr))",
       },
+      borderWidth: {
+        DEFAULT: "1px",
+        "0": "0",
+        "2": "2px",
+        "3": "3px",
+        "4": "4px",
+        "6": "6px",
+        "8": "8px",
+      },
+      spacing: {
+        "75px": "75px",
+      },
+      width: {
+        "12.5": "3.125",
+        "10.5": "2.625rem",
+      },
     },
   },
   plugins: [],
