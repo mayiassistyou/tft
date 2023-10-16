@@ -1,13 +1,13 @@
 "use client";
 
+import { ChampionType } from "@/types/champion.type";
+import { ItemType } from "@/types/item.type";
+import { TraitType } from "@/types/trait.type";
 import { useState } from "react";
+import ChampionBox from "../champion/champion-box";
 import ChampionBuilderBox from "../champion/champion-builder-box";
 import Input from "../input";
 import PartialTraits from "./partial-traits";
-import { ChampionType } from "@/types/champion.type";
-import { TraitType } from "@/types/trait.type";
-import { ItemType } from "@/types/item.type";
-import ChampionBox from "../champion/champion-box";
 
 type Props = {
   champions: ChampionType[];
@@ -19,8 +19,15 @@ const ChampBuilder = (props: Props) => {
   const { champions, traits, items } = props;
 
   const [sorter, setSorter] = useState<"name" | "price">("name");
+  const [selectedChampions, setSelectedChampions] = useState<ChampionType[]>(
+    [],
+  );
 
-  const handleSorter = (value: "name" | "price") => () => setSorter(value);
+  const handleSorter = (value: typeof sorter) => () => setSorter(value);
+
+  function handleSelectChampion(champ: ChampionType) {
+    setSelectedChampions((prevState) => [...prevState, champ]);
+  }
 
   return (
     <div className="grid grid-cols-12 my-5 gap-x-4">
@@ -30,43 +37,55 @@ const ChampBuilder = (props: Props) => {
 
       <div className="col-span-8 flex flex-col gap-1">
         <div className="my-5 flex items-center justify-center gap-2">
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
+          {[...Array(7)].map((_, index) => (
+            <ChampionBuilderBox
+              key={index}
+              champion={{
+                imageUrl: selectedChampions?.[index]?.imageUrl,
+                name: selectedChampions?.[index]?.name,
+                cost: selectedChampions?.[index]?.cost,
+              }}
+            />
+          ))}
         </div>
 
         <div className="mt-3 flex items-center justify-center gap-2 ml-75px">
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
+          {[...Array(7)].map((_, index) => (
+            <ChampionBuilderBox
+              key={index + 7}
+              champion={{
+                imageUrl: selectedChampions?.[index + 7]?.imageUrl,
+                name: selectedChampions?.[index + 7]?.name,
+                cost: selectedChampions?.[index + 7]?.cost,
+              }}
+            />
+          ))}
         </div>
 
         <div className="flex items-center justify-center gap-2 mt-7">
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
+          {[...Array(7)].map((_, index) => (
+            <ChampionBuilderBox
+              key={index + 14}
+              champion={{
+                imageUrl: selectedChampions?.[index + 14]?.imageUrl,
+                name: selectedChampions?.[index + 14]?.name,
+                cost: selectedChampions?.[index + 14]?.cost,
+              }}
+            />
+          ))}
         </div>
 
         <div className="flex items-center justify-center gap-2 mt-7 ml-75px">
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
-          <ChampionBuilderBox />
+          {[...Array(7)].map((_, index) => (
+            <ChampionBuilderBox
+              key={index + 21}
+              champion={{
+                imageUrl: selectedChampions?.[index + 21]?.imageUrl,
+                name: selectedChampions?.[index + 21]?.name,
+                cost: selectedChampions?.[index + 21]?.cost,
+              }}
+            />
+          ))}
         </div>
       </div>
 
@@ -131,6 +150,16 @@ const ChampBuilder = (props: Props) => {
                 traits.find((t) => t.key === championTrait),
               ) as TraitType[];
 
+              const recommentItems =
+                items
+                  .filter(
+                    (item) =>
+                      champion?.recommendItems?.find(
+                        (champItem) => item.ingameKey === champItem,
+                      ),
+                  )
+                  .slice(0, 3) || [];
+
               return (
                 <ChampionBox
                   key={champion.key}
@@ -140,6 +169,8 @@ const ChampBuilder = (props: Props) => {
                   size={42}
                   isLink={false}
                   tooltipPlacement="right"
+                  recommendItems={recommentItems}
+                  onSelectChampion={() => handleSelectChampion(champion)}
                 />
               );
             })}

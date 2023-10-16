@@ -17,7 +17,7 @@ export default function Tooltip({
         {children}
 
         <div
-          className={`absolute top-0 left-1/2 transform -translate-x-1/2
+          className={`absolute top-0 left-0 transform -translate-x-1/2
           -translate-y-full invisible group-hover:visible p-2 z-50 w-max
           max-w-[35rem] ${
             placement === "top"
