@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Tooltip from "../tooltip";
 import { ChampionType } from "@/types/champion.type";
+import { ItemType } from "@/types/item.type";
 
 type Props = {
   champion: ChampionType;
@@ -12,6 +13,16 @@ type Props = {
   hideName?: boolean;
   isLink?: boolean;
   tooltipPlacement?: "top" | "right";
+  recommendItems?: ItemType[];
+  onSelectChampion?: VoidFunction;
+};
+
+const colorByCost = {
+  1: "gray-500",
+  2: "green-500",
+  3: "blue-600",
+  4: "violet-600",
+  5: "yellow-300",
 };
 
 export default function ChampionBox({
@@ -21,52 +32,65 @@ export default function ChampionBox({
   hideName = false,
   isLink = true,
   tooltipPlacement,
+  recommendItems,
+  onSelectChampion,
 }: Props): JSX.Element {
-  const colorByCost = {
-    1: "gray-500",
-    2: "green-500",
-    3: "blue-600",
-    4: "violet-600",
-    5: "yellow-300",
-  };
-
   function ChampionMoreInfo(): JSX.Element {
     return (
-      <div className="flex justify-between items-stretch gap-2 h-full">
-        <div className="flex flex-col items-center self-center gap-1 py-2 pl-2">
-          <Image
-            src={champion.imageUrl}
-            alt={champion.name}
-            width={50}
-            height={50}
-            className="border border-cyan-900"
-          />
-          <p className="text-white font-semibold text-center whitespace-nowrap">
-            {champion.name}
-          </p>
-        </div>
-        <div
-          className="flex-grow border-x border-cyan-950 flex flex-col
+      <>
+        <div className="flex justify-between items-stretch gap-2 h-full">
+          <div className="flex flex-col items-center self-center gap-1 py-2 pl-2">
+            <Image
+              src={champion.imageUrl}
+              alt={champion.name}
+              width={50}
+              height={50}
+              className="border border-cyan-900"
+            />
+            <p className="text-white font-semibold text-center whitespace-nowrap">
+              {champion.name}
+            </p>
+          </div>
+          <div
+            className="flex-grow border-x border-cyan-950 flex flex-col
           justify-center p-2"
-        >
-          {championTraits.map((trait) => (
-            <div key={trait.name} className="flex items-center gap-2">
+          >
+            {championTraits.map((trait) => (
+              <div key={trait.name} className="flex items-center gap-2">
+                <Image
+                  src={trait.imageUrl}
+                  alt={trait.name}
+                  width={25}
+                  height={25}
+                  className="py-1 opacity-80"
+                />
+                <span className="text-white">{trait.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className="self-center flex items-center gap-1 pr-2">
+            <GiTwoCoins />
+            <span className="font-semibold">{champion.cost[0]}</span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-1 border-t border-t-cyan-950 px-1">
+          <p>Items: </p>
+
+          <div className="flex items-center gap-1 ">
+            {recommendItems?.map((item) => (
               <Image
-                src={trait.imageUrl}
-                alt={trait.name}
+                key={item.key}
+                src={item.imageUrl}
+                alt={item.desc}
                 width={25}
                 height={25}
                 className="py-1 opacity-80"
               />
-              <span className="text-white">{trait.name}</span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className="self-center flex items-center gap-1 pr-2">
-          <GiTwoCoins />
-          <span className="font-semibold">{champion.cost[0]}</span>
-        </div>
-      </div>
+      </>
     );
   }
 
@@ -95,7 +119,7 @@ export default function ChampionBox({
           </div>
         </Link>
       ) : (
-        <button>
+        <button onClick={onSelectChampion}>
           <div
             className="group flex flex-col gap-2 items-center cursor-pointer
           opacity-80"
