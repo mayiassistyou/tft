@@ -1,8 +1,13 @@
-import { ChampionType } from "@/types/champion.type";
+import type { ChampionType } from "@/types/champion.type";
+import type { DragEvent } from "react";
 
 type Props = {
   champion?: Pick<ChampionType, "imageUrl" | "name" | "cost">;
   onClick?: VoidFunction;
+  onDrag?: (e: DragEvent<HTMLButtonElement>) => void;
+  onDrop?: (e: DragEvent<HTMLButtonElement>) => void;
+  onDragStart?: (e: DragEvent<HTMLButtonElement>) => void;
+  id: number;
 };
 
 const colorByCost = {
@@ -14,12 +19,13 @@ const colorByCost = {
 };
 
 const ChampionBuilder = (props: Props) => {
-  const { champion, onClick } = props;
+  const { champion, id, onClick, onDrag, onDrop, onDragStart } = props;
 
   const handleSelect = () => !!champion && onClick?.();
 
   return (
     <button
+      id={id + ""}
       className={`inline-block text-left relative w-[72px] h-[42px] bg-cyan-950 border-l-3  border-r-3  cursor-pointer opacity-100 ${
         champion?.name
           ? `border-${
@@ -29,8 +35,9 @@ const ChampionBuilder = (props: Props) => {
       }`}
       draggable
       onClick={handleSelect}
-      onDragEnd={(e) => console.log("event drag end", e)}
-      onDragLeave={(e) => console.log("event drag leave", e)}
+      onDragLeave={onDrag}
+      onDrop={onDrop}
+      onDragStart={onDragStart}
       onDragOver={(e) => e.preventDefault()}
       style={{
         backgroundImage: `url(${champion?.imageUrl})`,
